@@ -4,6 +4,7 @@ import './App.css';
 import Header from '../src/components/Layout/Header';
 import MainPage from "./components/MainPage";
 import MainAbout from "./components/MainAbout";
+import Banner from "./components/Layout/Banner/Banner";
 
 function App() {
     return (
@@ -11,6 +12,7 @@ function App() {
             <Header />
             <MainPage />
             <MainAbout />
+            <Banner />
         </Fragment>
     );
 }

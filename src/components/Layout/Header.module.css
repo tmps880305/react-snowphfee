@@ -25,6 +25,7 @@
     /*float: left;*/
     flex-grow: 4;
     align-self: center;
+    text-decoration: none;
 }
 
 .nav_container img {

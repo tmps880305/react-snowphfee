@@ -1,0 +1,45 @@
+.bList-card {
+    width: 200px;
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.bList-title {
+    padding: 30px;
+}
+
+.bList-title a {
+    color: #FFFDFD;
+    font-family: 'Abhaya Libre', serif;
+    text-decoration: none;
+    font-size: 96px;
+}
+
+.bList-title a::after {
+    content: '';
+    width: 80px;
+    height: 3px;
+    background-color: #FFFDFD;
+    position: absolute;
+    margin: 100px -80px;
+}
+
+
+.bList-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 16px;
+}
+
+
+.bList-item a {
+    color: #FFFDFD;
+    font-family: 'Abhaya Libre', serif;
+    text-decoration: none;
+    /*font-weight: bold;*/
+    font-size: 36px;
+}
+

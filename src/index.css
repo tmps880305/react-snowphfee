@@ -1,12 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap');
+
 body {
-  margin: 0;
-  padding: 0;
-  display: inline-block;
-  overflow-x: hidden;
-  overflow-y: auto;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
