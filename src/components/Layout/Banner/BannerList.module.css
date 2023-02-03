@@ -10,14 +10,15 @@
     padding: 30px;
 }
 
-.bList-title a {
+.bList-title h3 {
+    margin: 0;
+    padding: 0;
     color: #FFFDFD;
     font-family: 'Abhaya Libre', serif;
-    text-decoration: none;
     font-size: 96px;
 }
 
-.bList-title a::after {
+.bList-title h3::after {
     content: '';
     width: 80px;
     height: 3px;
@@ -35,11 +36,12 @@
 }
 
 
-.bList-item a {
+.bList-item p {
+    margin: 0;
+    padding: 0;
     color: #FFFDFD;
     font-family: 'Abhaya Libre', serif;
     text-decoration: none;
-    /*font-weight: bold;*/
     font-size: 36px;
 }
 

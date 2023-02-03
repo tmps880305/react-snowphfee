@@ -4,7 +4,7 @@ import classes from './Banner.module.css';
 import BannerList from "./BannerList";
 
 
-const DUMMY_BANLISTS = [
+const DUMMY_BANNER_LISTS = [
     {
         id: 1,
         title: '01',
@@ -27,10 +27,10 @@ const Banner = (props) => {
     return (
         <div className={classes['banner-container']}>
             <div className={classes.slogan}>
-                <a href>Professionals</a>
+                <h2>Professionals</h2>
             </div>
             <div className={classes['banner-li-container']}>
-                {DUMMY_BANLISTS.map(item => {
+                {DUMMY_BANNER_LISTS.map(item => {
                     return <BannerList
                         key={item.id}
                         title={item.title}
