@@ -1,0 +1,12 @@
+.container {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    margin-bottom: 120px;
+}
+
+.mainImage {
+    width: 100vw;
+    height: 90vh;
+    clip-path: polygon(0 0, 100vw 0, 100vw 70vh, 50vw 86vh, 0 70vh);
+}

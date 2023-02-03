@@ -1,0 +1,12 @@
+.container {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    margin-bottom: 2000px;
+}
+
+.background {
+    width: 80vw;
+    height: 96vh;
+    background-color: #F5F2ED;
+}
