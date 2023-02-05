@@ -1,0 +1,41 @@
+.wrap {
+    width: 100vw;
+}
+
+.info-container {
+    width: 100vw;
+    height: 960px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    z-index: -1;
+}
+
+.info-background {
+    width: 77vw;
+    height: 630px;
+    background-color: #F5F2ED;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.info-container h2 {
+    /*margin-top: 160px;*/
+    /*margin-bottom: 50px;*/
+    color: #000000;
+    font-family: 'Abhaya Libre', serif;
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.info-li-container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    column-gap: 160px;
+}

@@ -10,7 +10,7 @@ const Header = (props) => {
         <header className={classes.header}>
             <div className={classes.nav_container}>
                 <img src={logoImage} alt="logo"/>
-                <a href>jw1109@rit.edu</a>
+                <a href>jeniwang09@gmail.com</a>
                 <NavButton/>
             </div>
         </header>

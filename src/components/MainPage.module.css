@@ -7,6 +7,12 @@
 
 .mainImage {
     width: 100vw;
-    height: 90vh;
+    /*height: 1200px;*/
     clip-path: polygon(0 0, 100vw 0, 100vw 70vh, 50vw 86vh, 0 70vh);
+}
+
+.mainSlogan {
+    position: absolute;
+    margin-top: 15%;
+    z-index: 1;
 }

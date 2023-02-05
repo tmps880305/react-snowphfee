@@ -1,0 +1,13 @@
+.interest-container {
+    /*position: relative;*/
+    width: 400px;
+    height: 540px;
+    background-color: #B3B3B3;
+}
+
+.interest-container img {
+    width: 400px;
+    height: 540px;
+    /*position: absolute;*/
+    margin: 20px 0 0 -20px;
+}

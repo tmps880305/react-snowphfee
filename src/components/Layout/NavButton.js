@@ -2,7 +2,25 @@ import React from 'react';
 
 import classes from "./NavButton.module.css";
 
-const NavButton = (props) => {
+const NavButton = () => {
+
+    const DUMMY_DROP_LISTS=[
+        {
+            id: 1,
+            item: 'Web development',
+            link: '/'
+        },
+        {
+            id: 2,
+            item: 'UX design',
+            link: '/'
+        },
+        {
+            id: 1,
+            item: 'Prototyping',
+            link: '/'
+        }
+    ];
 
     return (
         <nav className={classes.navbar}>
@@ -10,9 +28,9 @@ const NavButton = (props) => {
                 <li className={classes.dropdown}>
                     <a href="/">Professionals</a>
                     <ul className={classes['dropdown-content']}>
-                        <li><a href="/">Web development</a></li>
-                        <li><a href="/">UX design</a></li>
-                        <li><a href="/">Prototyping</a></li>
+                        {DUMMY_DROP_LISTS.map(item=>{
+                            return <li><a key={item.id} href={item.link} className={classes.dropItem}>{item.item}</a></li>
+                        })}
                     </ul>
                 </li>
                 <li>

@@ -5,6 +5,8 @@ import Header from '../src/components/Layout/Header';
 import MainPage from "./components/MainPage";
 import MainAbout from "./components/MainAbout";
 import Banner from "./components/Layout/Banner/Banner";
+import MainInterest from "./components/MainInterest";
+import Footer from "./components/Layout/Footer";
 
 function App() {
     return (
@@ -13,6 +15,8 @@ function App() {
             <MainPage />
             <MainAbout />
             <Banner />
+            <MainInterest />
+            <Footer />
         </Fragment>
     );
 }
