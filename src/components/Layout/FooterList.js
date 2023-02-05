@@ -7,8 +7,8 @@ const FooterList = (props) => {
 
     return (
         <div className={classes['foot-list']}>
-            <img src={iconImage} />
-            <a href={props.link} target="_blank">{props.content}</a>
+            <img src={iconImage} alt="foot-icon" />
+            <a href={props.link} target="_blank" rel="noreferrer">{props.content}</a>
         </div>
     )
 };
