@@ -11,7 +11,7 @@ const BannerList = (props) => {
             </div>
             <div className={classes['bList-item']}>
                 {props.items.map(item=>{
-                    return <p>{item}</p>
+                    return <p key={item.id}>{item.title}</p>
                 })}
             </div>
         </div>

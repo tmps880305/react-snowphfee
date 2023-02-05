@@ -11,7 +11,7 @@ const MainInterest = () => {
             image: 'snowboard'
         },
         {
-            id: 1,
+            id: 2,
             image: 'coffee'
         },
         {

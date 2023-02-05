@@ -8,17 +8,17 @@ const DUMMY_BANNER_LISTS = [
     {
         id: 1,
         title: '01',
-        items: ['Web develop', 'Front end']
+        items: [{id: '1-1', title: 'Web develop'}, {id: '1-2', title: 'Front end'}]
     },
     {
         id: 2,
         title: '02',
-        items: ['UX design']
+        items: [{id: '2-1', title: 'UX design'}]
     },
     {
         id: 3,
         title: '03',
-        items: ['Prototyping', 'IoT device']
+        items: [{id: '3-1', title: 'Prototyping'}, {id: '3-2', title: 'IoT device'}]
     }
 ];
 

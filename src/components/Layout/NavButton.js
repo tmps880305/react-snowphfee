@@ -16,7 +16,7 @@ const NavButton = () => {
             link: '/'
         },
         {
-            id: 1,
+            id: 3,
             item: 'Prototyping',
             link: '/'
         }
@@ -29,7 +29,7 @@ const NavButton = () => {
                     <a href="/">Professionals</a>
                     <ul className={classes['dropdown-content']}>
                         {DUMMY_DROP_LISTS.map(item=>{
-                            return <li><a key={item.id} href={item.link} className={classes.dropItem}>{item.item}</a></li>
+                            return <li key={item.id} ><a href={item.link} className={classes.dropItem}>{item.item}</a></li>
                         })}
                     </ul>
                 </li>
