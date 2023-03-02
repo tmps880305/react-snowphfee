@@ -6,22 +6,22 @@
 
 .mainImage {
     width: 100vw;
-    /*height: 1200px;*/
     clip-path: polygon(0 0, 100vw 0, 100vw 70vh, 50vw 86vh, 0 70vh);
 }
 
-.mainSlogan {
+.slg {
+    width: 100%;
     position: absolute;
-    margin-top: 15%;
-    z-index: 1;
+    margin-top: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
 }
 
-.slg {
+.slg h2 {
+    width: 50%;
     color: rgb(256,256,256,0.8);
-    font-family: 'Abhaya Libre', serif;
-    font-size: 36px;
-    position: absolute;
-    margin-top: 20%;
-    letter-spacing: 2px;
-    z-index: 2;
+    font-size: 28px;
+    text-align: center;
 }
