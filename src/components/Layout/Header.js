@@ -9,8 +9,10 @@ const Header = (props) => {
     return (
         <header className={classes.header}>
             <div className={classes.nav_container}>
-                <img src={logoImage} alt="logo"/>
-                <a href="mailto:jeniwang09@gmail.com">jeniwang09@gmail.com</a>
+                <div className={classes.nav_logo}>
+                    <a href="/"><img src={logoImage} alt="logo"/></a>
+                    <a href="mailto:jeniwang09@gmail.com">jeniwang09@gmail.com</a>
+                </div>
                 <NavButton/>
             </div>
         </header>

@@ -1,14 +1,19 @@
 .wrap {
     width: 100vw;
+    padding-bottom: 200px;
+    position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 .info-container {
-    width: 100vw;
-    height: 960px;
-    position: relative;
+    width: 80%;
+    /*height: 960px;*/
+    /*position: relative;*/
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     z-index: -1;
 }
 
@@ -23,19 +28,13 @@
 }
 
 .info-container h2 {
-    /*margin-top: 160px;*/
-    /*margin-bottom: 50px;*/
+    margin: 100px 0;
     color: #000000;
-    font-family: 'Abhaya Libre', serif;
-    font-size: 48px;
-    font-weight: bold;
-    letter-spacing: 3px;
-    text-transform: uppercase;
 }
 
 .info-li-container {
-    width: 100vw;
+    width: 90vw;
     display: flex;
-    justify-content: center;
-    column-gap: 160px;
+    justify-content: space-around;
+    /*column-gap: 160px;*/
 }

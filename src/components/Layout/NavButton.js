@@ -4,7 +4,7 @@ import classes from "./NavButton.module.css";
 
 const NavButton = () => {
 
-    const DUMMY_DROP_LISTS=[
+    const DUMMY_DROP_LISTS = [
         {
             id: 1,
             item: 'Web development',
@@ -24,14 +24,17 @@ const NavButton = () => {
 
     return (
         <nav className={classes.navbar}>
-            <ul className={classes['drop-ul']}>
+            <ul className={classes['nav-ul']}>
                 <li className={classes.dropdown}>
-                    <a href="/">Professionals</a>
-                    <ul className={classes['dropdown-content']}>
-                        {DUMMY_DROP_LISTS.map(item=>{
-                            return <li key={item.id} ><a href={item.link} className={classes.dropItem}>{item.item}</a></li>
-                        })}
-                    </ul>
+                    <div className={classes.dropWrap}>
+                        <a href="/">Professionals</a>
+                        <ul className={classes['dropdown-content']}>
+                            {DUMMY_DROP_LISTS.map(item => {
+                                return <li key={item.id}><a href={item.link}
+                                                            className={classes.dropItem}>{item.item}</a></li>
+                            })}
+                        </ul>
+                    </div>
                 </li>
                 <li>
                     <a href="/">Resume</a>

@@ -13,21 +13,28 @@
     height: 100%;
     margin: 0;
     padding: 0;
-    display: inline-flex;
+    display: flex;
+    justify-content: space-between;
 }
 
-.nav_container a {
+.nav_logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav_logo a {
     margin-left: 1vw;
     color: #FFFFFF;
     font-family: 'Abhaya Libre', serif;
-    font-size: 28px;
+    font-size: 24px;
     flex-grow: 4;
     align-self: center;
     text-decoration: none;
 }
 
-.nav_container img {
+.nav_logo img {
     width: 50px;
     height: 50px;
     align-self: center;
 }
+

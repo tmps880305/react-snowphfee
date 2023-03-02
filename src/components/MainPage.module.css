@@ -2,7 +2,6 @@
     width: 100%;
     display: inline-flex;
     justify-content: center;
-    margin-bottom: 120px;
 }
 
 .mainImage {
@@ -15,4 +14,14 @@
     position: absolute;
     margin-top: 15%;
     z-index: 1;
+}
+
+.slg {
+    color: rgb(256,256,256,0.8);
+    font-family: 'Abhaya Libre', serif;
+    font-size: 36px;
+    position: absolute;
+    margin-top: 20%;
+    letter-spacing: 2px;
+    z-index: 2;
 }

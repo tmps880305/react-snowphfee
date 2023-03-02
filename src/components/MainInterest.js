@@ -23,6 +23,8 @@ const MainInterest = () => {
 
     return (
         <div className={classes.wrap}>
+            <div className={classes['info-background']}>
+            </div>
             <div className={classes['info-container']}>
                 <h2>Interests</h2>
                 <div className={classes['info-li-container']}>
@@ -30,8 +32,7 @@ const MainInterest = () => {
                         return <MainInterestList key={item.id} image={item.image}/>
                     })}
                 </div>
-                <div className={classes['info-background']}>
-                </div>
+
             </div>
         </div>
     )

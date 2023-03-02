@@ -1,12 +1,24 @@
 .banner-container {
     width: 100vw;
-    height: 740px;
+    height: 600px;
     max-height: 740px;
-    margin-bottom: 300px;
+    margin: 150px 0;
+    /*margin-bottom: 300px;*/
     background-image: url('../../../assets/img/banner_background.png');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.banner-container .slogan {
+.banner-wrapper {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.slogan {
     width: 100%;
     display: flex;
     align-items:center;
@@ -14,19 +26,12 @@
 }
 
 .slogan h2 {
-    margin-top: 160px;
-    margin-bottom: 50px;
     color: #FFFFFF;
-    font-family: 'Abhaya Libre', serif;
-    font-size: 48px;
-    font-weight: bold;
-    letter-spacing: 3px;
-    text-transform: uppercase;
 }
 
 .banner-li-container {
-    width: 100vw;
+    /*width: 100vw;*/
     display: flex;
     justify-content: center;
-    column-gap: 160px;
+    /*column-gap: 160px;*/
 }
