@@ -1,9 +1,6 @@
 .container {
     width: 100vw;
-    height: 55vw;
-    min-width: 950px;
-    min-height: 522px;
-    /*margin-bottom: 140px;*/
+    height: clamp(522px, 55vw, 960px);
     display: inline-flex;
     justify-content: center;
 }
@@ -11,28 +8,23 @@
 .background {
     width: 80%;
     height: 96%;
-    min-width: 950px;
     background-color: #F5F2ED;
     display: inline-flex;
     justify-content: center;
-
 }
 
 .abt-container {
-    /*width: 930px;*/
-    /*height: 800px;*/
     align-self: center;
     display: grid;
-    grid-template-columns: 250px 45px 45px 400px;
-    grid-template-rows: 40px 170px 320px 130px;
+    grid-template-columns: 17vw 3vw 3vw 27vw;
+    grid-template-rows: 2.7vw 11.5vw 22vw 9vw;
 }
 
 .abt-selfie {
-    width: 384px;
-    height: 448px;
+    width: 26vw;
+    height: 31vw;
     grid-column-start: 1;
     grid-row-start: 3;
-    /*background-color: grey;*/
 }
 
 .abt-selfie img {
@@ -43,25 +35,21 @@
 .abt-title {
     width: fit-content;
     height: fit-content;
-    padding: 20px 32px;
-    border: 1.5px solid #000000;
-    margin-top: 30px;
+    padding: 1.3vw 2.2vw;
+    border: 0.1rem solid #000000;
+    margin-top: 2vw;
     grid-column-start: 2;
     grid-row-start: 2;
+    z-index: 2;
 }
 
 .abt-title h3 {
-    margin: 0;
-    padding: 0;
-    width: 200px;
-    color: #000000;
-    font-family: 'Abhaya Libre', serif;
-    font-size: 28px;
+    width: clamp(120px, 14vw, 240px);
 }
 
 .abt-info {
-    width: 400px;
-    height: 424px;
+    width: 27vw;
+    height: 29vw;
     background-color: #FFFFFF;
     text-align: justify;
     grid-column-start: 4;
@@ -72,16 +60,13 @@
 
 .abt-info p {
     width: 70%;
-    color: #000000;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-size: 14px;
-    margin-top: 70px;
+    margin-top: 4.8vw;
     align-self: center;
 }
 
 .abt-but {
-    width: 200px;
-    height: 40px;
+    width: 10vw;
+    height: 2.6vw;
     grid-column-start: 3;
     grid-row-start: 4;
 }
@@ -93,21 +78,90 @@
     border: none;
     color: #FFFFFF;
     font-family: 'Abhaya Libre', serif;
-    font-size: 24px;
+    font-size: 1.4vw;
 }
 
 .abt-line {
     display: flex;
     grid-column-start: 3;
     grid-row-start: 3;
-    margin-top: -16px;
+    margin-top: -1vw;
 }
 
 .abt-line span {
     content: '';
-    width: 3px;
-    height: 320px;
-
+    width: clamp(1px, 0.2vw, 3px);
+    height: 22vw;
     background-color: #000000;
     z-index: 2;
+}
+
+@media only screen and (max-width: 900px) {
+    .container {
+        width: 100vw;
+        height: fit-content;
+    }
+
+    .background {
+        width: fit-content;
+        height: fit-content;
+        padding: 6% 10%;
+    }
+
+    .abt-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+    }
+
+    .abt-selfie {
+        width: 60vw;
+        height: auto;
+        aspect-ratio: 3/4;
+    }
+
+    .abt-title {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .abt-title h3 {
+        width: fit-content;
+        font-size: 2rem;
+    }
+
+    .abt-info {
+        width: 60vw;
+        height: fit-content;
+    }
+
+    .abt-info p {
+        width: 100%;
+        margin: 0;
+        padding: 2%;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .abt-but {
+        width: 20vw;
+        height: 6vw;
+    }
+
+    .abt-but button {
+        font-size: 1rem;
+    }
+
+    .abt-line {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .background {
+        width: 100vw;
+    }
 }
