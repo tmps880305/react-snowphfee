@@ -19,15 +19,20 @@ const NavButton = () => {
             id: 3,
             item: 'Prototyping',
             link: '/'
+        },
+        {
+            id: 4,
+            item: 'Accessibility',
+            link: '/'
         }
     ];
 
     return (
-        <nav className={classes.navbar}>
+        <div className={classes.navbar}>
             <ul className={classes['nav-ul']}>
                 <li className={classes.dropdown}>
                     <div className={classes.dropWrap}>
-                        <a href="/">Professionals</a>
+                        <a href="/">Skills</a>
                         <ul className={classes['dropdown-content']}>
                             {DUMMY_DROP_LISTS.map(item => {
                                 return <li key={item.id}><a href={item.link}
@@ -43,7 +48,7 @@ const NavButton = () => {
                     <a href="/">About</a>
                 </li>
             </ul>
-        </nav>
+        </div>
     )
 
 };
