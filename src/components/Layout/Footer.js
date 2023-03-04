@@ -22,7 +22,7 @@ const Footer = () => {
     return (
         <div className={classes['foot-wrap']}>
             <div className={classes['foot-container']}>
-                <p>Contact me</p>
+                <h3>Contact me</h3>
                 <div className={classes['foot-li-wrap']}>
                     {DUMMY_FOOTER_LISTS.map(item => {
                         return <FooterList key={item.id} name={item.name} content={item.content} link={item.link}/>

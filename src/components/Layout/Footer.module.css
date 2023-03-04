@@ -1,6 +1,6 @@
 .foot-wrap {
     width: 100vw;
-    height: 120px;
+    height: clamp(80px, 7vw, 140px);
     margin: 0;
     padding: 0;
     background-color: #6A6A6A;
@@ -14,14 +14,10 @@
     margin: 0;
     padding: 0;
     display: flex;
-    /*justify-content: space-between;*/
 }
 
-.foot-container p {
+.foot-container h3 {
     color: #F5F2ED;
-    font-family: 'Abhaya Libre', serif;
-    font-size: 32px;
-    /*font-weight: bold;*/
     letter-spacing: 2px;
     flex-grow: 2;
     align-self: center;
@@ -31,4 +27,27 @@
     display: flex;
     justify-content: center;
     flex-grow: 2;
+}
+
+@media only screen and (max-width: 900px) {
+    .foot-wrap {
+        width: 100%;
+        height: fit-content;
+        padding: 5% 0;
+    }
+
+    .foot-container {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+    }
+
+    .foot-li-wrap {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .foot-container h3 {
+        font-size: 2rem;
+    }
 }
