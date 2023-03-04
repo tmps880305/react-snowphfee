@@ -1,14 +1,14 @@
 import React from 'react';
 
-import classes from './Banner.module.css';
-import BannerList from "./BannerList";
+import classes from './MainSkill.module.css';
+import MainSkillList from "./MainSkillList";
 
 
-const DUMMY_BANNER_LISTS = [
+const DUMMY_SKILL_LISTS = [
     {
         id: 1,
         title: '01',
-        items: [{id: '1-1', title: 'Web develop'}, {id: '1-2', title: 'Front end'}]
+        items: [{id: '1-1', title: 'Web develop'}, {id: '1-2', title: 'Front-end'}]
     },
     {
         id: 2,
@@ -27,17 +27,17 @@ const DUMMY_BANNER_LISTS = [
     }
 ];
 
-const Banner = (props) => {
+const MainSkill = (props) => {
 
     return (
-        <div className={classes['banner-container']}>
-            <div className={classes['banner-wrapper']}>
+        <div className={classes['skill-container']}>
+            <div className={classes['skill-wrapper']}>
                 <div className={classes.slogan}>
-                    <h2>Professionals</h2>
+                    <h2>Skills</h2>
                 </div>
-                <div className={classes['banner-li-container']}>
-                    {DUMMY_BANNER_LISTS.map(item => {
-                        return <BannerList
+                <div className={classes['skill-li-container']}>
+                    {DUMMY_SKILL_LISTS.map(item => {
+                        return <MainSkillList
                             key={item.id}
                             title={item.title}
                             items={item.items}
@@ -49,4 +49,4 @@ const Banner = (props) => {
     )
 };
 
-export default Banner
+export default MainSkill

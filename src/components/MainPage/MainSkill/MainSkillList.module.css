@@ -1,0 +1,74 @@
+.sList-card {
+    width: 14vw;
+    margin: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sList-title {
+    padding: 1.5vw;
+}
+
+.sList-title h3 {
+    color: #FFFDFD;
+    font-size: 5vw;
+}
+
+.sList-title h3::after {
+    content: '';
+    width: 4.5vw;
+    height: clamp(1px, 0.2vw, 3px);
+    background-color: #FFFDFD;
+    position: absolute;
+    margin: 5vw -4.5vw;
+}
+
+.sList-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+.sList-item .itemText {
+    margin: 0;
+    padding: 0;
+    color: #FFFDFD;
+    font-family: 'Abhaya Libre', serif;
+    text-decoration: none;
+    font-size: clamp(1.125rem, 2vw, 2.25rem);
+}
+
+@media only screen and (max-width: 900px) {
+    .sList-card {
+        width: 100%;
+        margin: 0;
+        flex-direction: row;
+        align-items: center;
+        column-gap: 20px;
+    }
+
+    .sList-title {
+        margin-top: -15px;
+    }
+
+    .sList-title h3 {
+        font-size: 4rem;
+        font-weight: lighter;
+    }
+
+    .sList-title h3::after {
+        width: 50px;
+        margin: 63px -53px;
+    }
+
+    .sList-item {
+        row-gap: 0;
+        align-items: start;
+    }
+
+    .sList-item .itemText {
+        font-size: 2rem;
+    }
+}

@@ -3,7 +3,7 @@ import React from 'react';
 import classes from './MainInterestList.module.css';
 
 const MainInterestList = (props) => {
-    const interestImage = require(`../assets/img/main_interest_` + props.image + `.png`);
+    const interestImage = require(`../../../assets/img/main_interest_` + props.image + `.png`);
 
     return (
         <div className={classes['interest-container']}>

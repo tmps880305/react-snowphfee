@@ -1,0 +1,47 @@
+.skill-container {
+    width: 100vw;
+    margin: 8vw 0;
+    padding: 5vw 0;
+    background-image: url('../../../assets/img/skill_background.png');
+    display: flex;
+    justify-content: center;
+}
+
+.skill-wrapper {
+    width: 80%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.slogan {
+    width: 80%;
+    margin: 2vw;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    align-self: center;
+}
+
+.slogan h2 {
+    color: #FFFFFF;
+}
+
+.skill-li-container {
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 900px) {
+    .skill-li-container {
+        flex-direction: column;
+        align-items: start;
+        align-self: center;
+        row-gap: 60px;
+    }
+
+    .skill-wrapper {
+        align-items: start;
+    }
+}

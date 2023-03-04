@@ -1,7 +1,7 @@
 import React from 'react';
 
 import classes from './MainAbout.module.css';
-import selfImage from '../assets/img/main_selfie.png'
+import selfImage from '../../../assets/img/main_selfie.png'
 
 const MainAbout = (props) => {
     return (

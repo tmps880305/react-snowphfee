@@ -1,7 +1,7 @@
 import React from 'react';
 
 import classes from './MainPage.module.css';
-import mainImage from '../assets/img/main_image.png'
+import mainImage from '../../assets/img/main_image.png'
 
 const MainPage = (props) => {
     return (
