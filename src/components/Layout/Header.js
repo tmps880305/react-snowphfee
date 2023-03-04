@@ -5,7 +5,7 @@ import classes from './Header.module.css';
 import NavButton from './NavButton';
 
 
-const Header = (props) => {
+const Header = () => {
     return (
         <header className={classes.header}>
             <nav className={classes.nav_container}>
