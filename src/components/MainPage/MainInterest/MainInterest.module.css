@@ -1,6 +1,6 @@
 .wrap {
     width: 100vw;
-    padding-bottom: 200px;
+    padding-bottom: 10vw;
     position: relative;
     display: flex;
     justify-content: center;
@@ -8,8 +8,6 @@
 
 .info-container {
     width: 80%;
-    /*height: 960px;*/
-    /*position: relative;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,7 +17,7 @@
 
 .info-background {
     width: 77vw;
-    height: 630px;
+    height: 33vw;
     background-color: #F5F2ED;
     position: absolute;
     bottom: 0;
@@ -28,13 +26,37 @@
 }
 
 .info-container h2 {
-    margin: 100px 0;
-    color: #000000;
+    margin: 8vw 0;
 }
 
 .info-li-container {
     width: 90vw;
     display: flex;
     justify-content: space-around;
-    /*column-gap: 160px;*/
+}
+
+@media only screen and (max-width: 900px) {
+    .info-container {
+        width: 88%;
+        background-color: #F5F2ED;
+    }
+
+    .info-container h2 {
+        margin-bottom: 0;
+    }
+
+    .info-li-container {
+        width: 88%;
+        padding: 6%;
+        background-color: #F5F2ED;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 40px;
+    }
+
+    .info-background {
+        display: none;
+    }
+
 }

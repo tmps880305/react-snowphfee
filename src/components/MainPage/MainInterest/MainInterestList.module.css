@@ -1,13 +1,27 @@
 .interest-container {
-    /*position: relative;*/
-    width: 400px;
-    height: 540px;
+    width: 21vw;
+    height: 28vw;
     background-color: #B3B3B3;
 }
 
 .interest-container img {
-    width: 400px;
-    height: 540px;
-    /*position: absolute;*/
-    margin: 20px 0 0 -20px;
+    width: 100%;
+    height: 100%;
+    margin: 1vw 0 0 -1vw;
+}
+
+@media only screen and (max-width: 900px){
+    .interest-container {
+        width: 60vw;
+        height: auto;
+        padding: 2%;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .interest-container img {
+        margin: 0;
+    }
 }
