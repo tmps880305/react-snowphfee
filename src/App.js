@@ -8,6 +8,7 @@ import CatchCursor from "./components/Skills/Prototyping/CatchCursor";
 import Skills from "./components/Skills/Skills";
 import Resume from "./components/Resume";
 import AboutMe from "./components/AboutMe";
+import ProjectDetail from "./components/Skills/ProjectDetail";
 
 const router = createBrowserRouter([
     {
@@ -17,7 +18,7 @@ const router = createBrowserRouter([
         children: [
             {index: true, element: <MainPage/>},
             {path: 'skills', element: <Skills/>},
-            {path: 'skills/catchcursor', element: <CatchCursor/>},
+            {path: 'skills/:project', element: <ProjectDetail/>},
             {path: 'resume', element: <Resume/>},
             {path: 'about', element: <AboutMe/>},
         ]
