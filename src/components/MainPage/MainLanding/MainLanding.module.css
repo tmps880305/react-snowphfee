@@ -1,0 +1,40 @@
+.container {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.mainImage {
+    width: 100vw;
+    aspect-ratio: 16/9;
+    clip-path: polygon(0 0, 100vw 0, 100vw 36vw, 50vw 45vw, 0 36vw);
+}
+
+.slg {
+    width: 100%;
+    position: absolute;
+    margin-top: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.slg div {
+    width: 50%;
+    color: rgb(256,256,256,0.8);
+    font-size: clamp(1.25rem, 1.6vw, 1.75rem);
+    text-align: center;
+}
+
+/* Initial background image shape and set aspect ratio */
+@media only screen and (max-width: 1120px){
+    .mainImage {
+        margin-bottom: 80px;
+        clip-path: none;
+    }
+
+    .slg {
+        margin-top: 15%;
+    }
+}

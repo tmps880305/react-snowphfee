@@ -1,17 +1,18 @@
 import React from 'react';
 
-import classes from './MainPage.module.css';
-import mainImage from '../../assets/img/main_image.png'
+import MainLanding from "./MainLanding/MainLanding";
+import MainAbout from "./MainAbout/MainAbout";
+import MainSkill from "./MainSkill/MainSkill";
+import MainInterest from "./MainInterest/MainInterest";
 
-const MainPage = (props) => {
+const MainPage = () => {
     return (
-        <div className={classes.container}>
-            <div className={classes.slg}>
-                <div className={classes.slg}>Design meets development - bridging the gap with multi-disciplinary
-                    experience</div>
-            </div>
-            <img src={mainImage} className={classes.mainImage} alt="main-background"/>
-        </div>
+        <>
+            <MainLanding/>
+            <MainAbout/>
+            <MainSkill/>
+            <MainInterest/>
+        </>
     )
 };
 

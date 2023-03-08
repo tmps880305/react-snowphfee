@@ -2,7 +2,7 @@
     width: 100vw;
     margin: 8vw 0;
     padding: 5vw 0;
-    background-image: url('../../../assets/img/skill_background.png');
+    background-image: url('../../../assets/img/main/main_skill_background.png');
     display: flex;
     justify-content: center;
 }

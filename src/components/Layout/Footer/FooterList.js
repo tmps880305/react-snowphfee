@@ -3,7 +3,7 @@ import React from 'react';
 import classes from './FooterList.module.css';
 
 const FooterList = (props) => {
-    const iconImage = require(`../../assets/icon/icon_` + props.name + `.png`);
+    const iconImage = require(`../../../assets/img/icon/icon_` + props.name + `.png`);
 
     return (
         <div className={classes['foot-list']}>

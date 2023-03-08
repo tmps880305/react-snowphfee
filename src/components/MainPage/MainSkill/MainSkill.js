@@ -8,7 +8,7 @@ const DUMMY_SKILL_LISTS = [
     {
         id: 1,
         title: '01',
-        items: [{id: '1-1', title: 'Web develop'}, {id: '1-2', title: 'Front-end'}]
+        items: [{id: '1-1', title: 'Front-end'}]
     },
     {
         id: 2,
@@ -18,7 +18,7 @@ const DUMMY_SKILL_LISTS = [
     {
         id: 3,
         title: '03',
-        items: [{id: '3-1', title: 'Prototyping'}, {id: '3-2', title: 'IoT device'}]
+        items: [{id: '3-1', title: 'Prototyping'}]
     },
     {
         id: 4,

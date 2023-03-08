@@ -1,24 +1,31 @@
-import React, {Fragment} from "react";
+import React from "react";
+import {createBrowserRouter, RouterProvider} from "react-router-dom";
 
 import './App.css';
-import Header from '../src/components/Layout/Header';
 import MainPage from "./components/MainPage/MainPage";
-import MainAbout from "./components/MainPage/MainAbout/MainAbout";
-import MainSkill from "./components/MainPage/MainSkill/MainSkill";
-import MainInterest from "./components/MainPage/MainInterest/MainInterest";
-import Footer from "./components/Layout/Footer";
+import RootLayout from "./components/Layout/RootLayout";
+import CatchCursor from "./components/Skills/Prototyping/CatchCursor";
+import Skills from "./components/Skills/Skills";
+import Resume from "./components/Resume";
+import AboutMe from "./components/AboutMe";
+
+const router = createBrowserRouter([
+    {
+        path: '/',
+        element: <RootLayout/>,
+        // errorElement: <ErrorPage/>,
+        children: [
+            {index: true, element: <MainPage/>},
+            {path: 'skills', element: <Skills/>},
+            {path: 'skills/catchcursor', element: <CatchCursor/>},
+            {path: 'resume', element: <Resume/>},
+            {path: 'about', element: <AboutMe/>},
+        ]
+    },
+]);
 
 function App() {
-    return (
-        <Fragment>
-            <Header />
-            <MainPage />
-            <MainAbout />
-            <MainSkill />
-            <MainInterest />
-            <Footer />
-        </Fragment>
-    );
+    return <RouterProvider router={router}/>;
 }
 
 export default App;

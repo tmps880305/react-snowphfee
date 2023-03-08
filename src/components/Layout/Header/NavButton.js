@@ -1,4 +1,5 @@
 import React from 'react';
+import {NavLink} from "react-router-dom";
 
 import classes from "./NavButton.module.css";
 
@@ -7,23 +8,23 @@ const NavButton = () => {
     const DUMMY_DROP_LISTS = [
         {
             id: 1,
-            item: 'Web development',
-            link: '/'
+            item: 'Front-end',
+            link: 'skills'
         },
         {
             id: 2,
             item: 'UX design',
-            link: '/'
+            link: 'skills'
         },
         {
             id: 3,
             item: 'Prototyping',
-            link: '/'
+            link: 'skills'
         },
         {
             id: 4,
             item: 'Accessibility',
-            link: '/'
+            link: 'skills'
         }
     ];
 
@@ -32,20 +33,20 @@ const NavButton = () => {
             <ul className={classes['nav-ul']}>
                 <li className={classes.dropdown}>
                     <div className={classes.dropWrap}>
-                        <a href="/">Skills</a>
+                        <NavLink to="skills">Skills</NavLink>
                         <ul className={classes['dropdown-content']}>
                             {DUMMY_DROP_LISTS.map(item => {
-                                return <li key={item.id}><a href={item.link}
-                                                            className={classes.dropItem}>{item.item}</a></li>
+                                return <li key={item.id}><NavLink to={item.link}
+                                                            className={classes.dropItem}>{item.item}</NavLink></li>
                             })}
                         </ul>
                     </div>
                 </li>
                 <li>
-                    <a href="/">Resume</a>
+                    <NavLink to='resume'>Resume</NavLink>
                 </li>
                 <li>
-                    <a href="/">About</a>
+                    <NavLink to='about'>about</NavLink>
                 </li>
             </ul>
         </div>

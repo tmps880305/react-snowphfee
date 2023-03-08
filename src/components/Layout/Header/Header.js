@@ -1,6 +1,7 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 
-import logoImage from '../../assets/img/logo.jpg';
+import logoImage from '../../../assets/img/icon/logo.jpg';
 import classes from './Header.module.css';
 import NavButton from './NavButton';
 
@@ -10,8 +11,8 @@ const Header = () => {
         <header className={classes.header}>
             <nav className={classes.nav_container}>
                 <div className={classes.nav_logo}>
-                    <a href="/"><img src={logoImage} alt="logo"/></a>
-                    <a href="mailto:jeniwang09@gmail.com">jeniwang09@gmail.com</a>
+                    <Link to="/"><img src={logoImage} alt="logo"/></Link>
+                    <Link to="mailto:jeniwang09@gmail.com">jeniwang09@gmail.com</Link>
                 </div>
                 <NavButton/>
             </nav>
