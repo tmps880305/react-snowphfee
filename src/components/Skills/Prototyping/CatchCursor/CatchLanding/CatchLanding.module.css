@@ -1,0 +1,56 @@
+.container {
+    width: 100vw;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.mainImage {
+    width: 100%;
+    height: auto;
+}
+
+.title {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    /*margin-top: 12%;*/
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    z-index: 2;
+}
+
+.ttlContainer {
+    width: 50%;
+    height: auto;
+    margin-top: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.ttlContainer .mainTitle {
+    width: 100%;
+    line-height: 1rem;
+    font-weight: normal;
+}
+
+.title .subTitle {
+    width: 100%;
+    color: #303030;
+    font-family: 'Abhaya Libre', serif;
+    font-size: clamp(1rem, 1.6vw, 1.75rem);
+}
+
+/* Initial background image shape and set aspect ratio */
+@media only screen and (max-width: 1120px){
+    .mainImage {
+        margin-bottom: 80px;
+        clip-path: none;
+    }
+
+    .slg {
+        margin-top: 15%;
+    }
+}

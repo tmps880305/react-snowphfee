@@ -1,0 +1,12 @@
+.card {
+    /*width: fit-content;*/
+}
+
+.card h2 {
+    /*line-height: 1rem;*/
+}
+
+.card p {
+    font-weight: lighter;
+    letter-spacing: 0.08rem;
+}

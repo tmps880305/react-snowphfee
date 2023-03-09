@@ -1,0 +1,12 @@
+.container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin: clamp(5px,1.2vw,20px) 0;
+}
+
+.cardWraps {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}

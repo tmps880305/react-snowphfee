@@ -46,7 +46,7 @@ const NavButton = () => {
                     <NavLink to='resume'>Resume</NavLink>
                 </li>
                 <li>
-                    <NavLink to='about'>about</NavLink>
+                    <NavLink to='about'>About</NavLink>
                 </li>
             </ul>
         </div>
