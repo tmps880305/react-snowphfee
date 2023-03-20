@@ -10,13 +10,13 @@ import ProjApproach from "../../../Layout/ProjectContent/ProjApproach/ProjApproa
 import ProjResult from "../../../Layout/ProjectContent/ProjResult/ProjResult";
 import ProjSummary from "../../../Layout/ProjectContent/ProjSummary/ProjSummary";
 
-const DUMMY_ProjContent = [
-    {id: 1, component: <ProjIntroduction title='Introduction'/>},
-    {id: 2, component: <ProjProcess title='Process'/>},
-    {id: 3, component: <ProjApproach title='Approach'/>},
-    {id: 4, component: <ProjResult title='Results'/>},
-    {id: 5, component: <ProjSummary title='Summary'/>}
-]
+// const DUMMY_ProjContent = [
+//     {id: 1, component: <ProjIntroduction title='Introduction'/>},
+//     {id: 2, component: <ProjProcess title='Process'/>},
+//     {id: 3, component: <ProjApproach title='Approach'/>},
+//     {id: 4, component: <ProjResult title='Results'/>},
+//     {id: 5, component: <ProjSummary title='Summary'/>}
+// ]
 
 const CatchCursor = (props) => {
     return (
@@ -24,9 +24,11 @@ const CatchCursor = (props) => {
             <CatchLanding/>
             <ProjectInfo/>
             <ProjectMotion/>
-            {DUMMY_ProjContent.map(project => {
-                return (project.component)
-            })}
+            <ProjIntroduction title='Introduction'/>
+            <ProjProcess title='Process'/>
+            <ProjApproach title='Approach'/>
+            <ProjResult title='Results'/>
+            <ProjSummary title='Summary'/>
         </div>
     )
 };
