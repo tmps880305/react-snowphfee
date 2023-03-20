@@ -3,13 +3,10 @@ import React from 'react';
 import classes from './ProjTools.module.css';
 
 const ProjTools = (props) => {
-
     // Find the number of list item from id of tool
     const toolId = props.tool.id;
-    // idPref is the prefix of id before the number
-    const num = toolId.search(props.idPref) + props.idPref.length;
-    // add 0 to make listId start with 0. Ex. 01,02,03
-    const listId = "0" + toolId[num];
+    const num = toolId.search(props.idPref) + props.idPref.length; // idPref is the prefix of id before the number
+    const listId = "0" + toolId[num];   // add 0 to make listId start with 0. Ex. 01,02,03
 
     return (
         <div className={classes['tool-card']}>

@@ -6,7 +6,7 @@ import ProjectSeparator from "../../ProjectSeparator/ProjectSeparator";
 const ProjResult = (props) => {
     return (
         <>
-            <ProjectSeparator title={props.title}/>
+            <ProjectSeparator title={props.projResults.title}/>
             <div>
                 <h1>Project Results</h1>
             </div>
