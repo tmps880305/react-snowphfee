@@ -1,0 +1,18 @@
+.sep-container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.sep-wrap {
+    width: 16%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1vw 0;
+}
+
+.line {
+    height: 0.1vw;
+    width: 5vw;
+}
