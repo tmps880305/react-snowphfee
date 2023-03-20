@@ -6,9 +6,11 @@ import ProjectSeparator from "../../ProjectSeparator/ProjectSeparator";
 const ProjApproach = (props) => {
     return (
         <>
-            <ProjectSeparator title={props.title}/>
-            <div>
-                <h1>Project Approach</h1>
+            <div className={classes['appr-container']}>
+                <ProjectSeparator title={props.title}/>
+                <div className={classes['appr-wrap']}>
+                    <h3>Kickoff Meeting with Client</h3>
+                </div>
             </div>
         </>
     )

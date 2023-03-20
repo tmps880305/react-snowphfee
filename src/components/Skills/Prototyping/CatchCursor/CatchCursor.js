@@ -9,23 +9,40 @@ import ProjProcess from "../../../Layout/ProjectContent/ProjProcess/ProjProcess"
 import ProjApproach from "../../../Layout/ProjectContent/ProjApproach/ProjApproach";
 import ProjResult from "../../../Layout/ProjectContent/ProjResult/ProjResult";
 import ProjSummary from "../../../Layout/ProjectContent/ProjSummary/ProjSummary";
+import ProjTools from "../../../Layout/ProjectContent/ProjTools/ProjToolsList";
 
-// const DUMMY_ProjContent = [
-//     {id: 1, component: <ProjIntroduction title='Introduction'/>},
-//     {id: 2, component: <ProjProcess title='Process'/>},
-//     {id: 3, component: <ProjApproach title='Approach'/>},
-//     {id: 4, component: <ProjResult title='Results'/>},
-//     {id: 5, component: <ProjSummary title='Summary'/>}
-// ]
+const DUMMY_CATCHCURSOR_INFO = [
+    {
+        id: 1,
+        title: 'Focus',
+        item: 'Accessibility / UX design / Usability testing'
+    },
+    {
+        id: 2,
+        title: 'Time',
+        item: 'Course Project - 11 weeks'
+    },
+    {
+        id: 3,
+        title: 'Role',
+        item: 'UI develop / UX research / Program develop'
+    },
+    {
+        id: 4,
+        title: 'Tools',
+        item: 'Python / Raspberry Pi / Edge Impulse / HTML'
+    }
+]
 
 const CatchCursor = (props) => {
     return (
         <div className={classes}>
             <CatchLanding/>
-            <ProjectInfo/>
+            <ProjectInfo info={DUMMY_CATCHCURSOR_INFO}/>
             <ProjectMotion/>
             <ProjIntroduction title='Introduction'/>
-            <ProjProcess title='Process'/>
+            <ProjProcess title='Timeline'/>
+            <ProjTools title='Tools'/>
             <ProjApproach title='Approach'/>
             <ProjResult title='Results'/>
             <ProjSummary title='Summary'/>

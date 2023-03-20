@@ -7,12 +7,12 @@ const ProjIntroduction = (props) => {
     return (
         <>
             <div className={classes['intro-container']}>
-            <ProjectSeparator title={props.title}/>
+                <ProjectSeparator title={props.title}/>
                 <div className={classes['intro-wrap']}>
                     <div className={classes.intro}>
-                        Hand-free interface control provides accessibility for people with physical impairments and
-                        hand-busy
-                        situational impairments.
+                        CatchCursor is a voice user interface developed by us to provide more accessible user interface
+                        for people with physical impairments and people under hand-busy situational impairments. Using
+                        speech inputs, users can control the cursor on their computer.
                     </div>
                 </div>
             </div>

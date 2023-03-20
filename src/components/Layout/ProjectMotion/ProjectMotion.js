@@ -7,17 +7,17 @@ const DUMMY_MOTION = [
     {
         id: 1,
         title: 'Prompt',
-        item: 'Evaluate usability and user experience for our customer – Pixel Paper'
+        item: 'Interface control could become hand-free to be more accessible for people'
     },
     {
         id: 2,
         title: 'Problem',
-        item: 'Is Pixel Paper usable enough for students with/without experience using online course system?'
+        item: 'Physical interface control might not be usable for people with (situational) impairments.'
     },
     {
         id: 3,
         title: 'Solution',
-        item: 'By going through the Heuristic Evaluation and usability test, issues were concluded for Pixel Paper to consider improving.'
+        item: 'Construct voice user interface (VOI) to provide speech-input control for personal computers.'
     }
 ]
 

@@ -17,4 +17,5 @@
     font-family: 'Noto Sans JP', sans-serif;
     font-size: clamp(1rem, 1.6vw, 1.75rem);
     text-align: center;
+    line-height: 2;
 }
