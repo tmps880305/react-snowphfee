@@ -95,7 +95,26 @@ const DUMMY_CATCHCURSOR_INFO = {
     },
     approach: {title: 'Approach'},
     projResults: {title: 'Results'},
-    summary: {title: 'Summary'},
+    summary: {
+        title: 'Summary',
+        summary: {
+            title: 'CatchCursor is a Voice User Interface that allows people to control the cursor on the PC.',
+            list: [
+                {
+                    id: 's1',
+                    sentence: 'The system is embedded on Raspberry Pi with Python codes, which is portable and light-weighted.'
+                },
+                {
+                    id: 's2',
+                    sentence: 'The speech recognition module is built with a no-code service that is more accessible for non-experts.'
+                },
+                {
+                    id: 's3',
+                    sentence: 'The grid system is simple and accessible for wide range of users.'
+                }
+            ]
+        }
+    },
     futureWork: {
         title: 'Future Works',
         futureworks: [
@@ -124,6 +143,20 @@ const DUMMY_CATCHCURSOR_INFO = {
                     {
                         id: '-2',
                         sentence: 'Customize the module for users with their own speech data.'
+                    }
+                ]
+            },
+            {
+                id: 'f3',
+                title: 'User experience evaluations and tests:',
+                items: [
+                    {
+                        id: '-1',
+                        sentence: 'The system still need to be evaluated with UX design guidelines and principles.'
+                    },
+                    {
+                        id: '-2',
+                        sentence: 'Usability tests would be required to obtain user feedbacks.'
                     }
                 ]
             }

@@ -9,7 +9,7 @@ const ProjApproach = (props) => {
             <div className={classes['appr-container']}>
                 <ProjectSeparator title={props.approach.title}/>
                 <div className={classes['appr-wrap']}>
-                    <h3>Kickoff Meeting with Client</h3>
+                    <h3>Approach</h3>
                 </div>
             </div>
         </>

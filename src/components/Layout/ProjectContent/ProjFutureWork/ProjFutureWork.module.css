@@ -30,6 +30,7 @@
 
 .intro ul {
     width: 80%;
+    list-style-type: circle;
 }
 
 .intro ol {
