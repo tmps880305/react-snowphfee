@@ -21,39 +21,39 @@ const DUMMY_CATCHCURSOR_INFO = {
     introduction: {title: 'Introduction'},
     motionInfo: [
         {
-            id: 1,
+            id: 'mi1',
             title: 'Focus',
             item: 'Accessibility / UX design / Usability testing'
         },
         {
-            id: 2,
+            id: 'mi2',
             title: 'Time',
             item: 'Course Project - 11 weeks'
         },
         {
-            id: 3,
+            id: 'mi3',
             title: 'Role',
             item: 'UI develop / UX research / Program develop'
         },
         {
-            id: 4,
+            id: 'mi4',
             title: 'Tools',
             item: 'Python / Raspberry Pi / Edge Impulse / HTML'
         }
     ],
     motion: [
         {
-            id: 1,
+            id: 'm1',
             title: 'Prompt',
             item: 'Interface control could become hand-free to be more accessible for people'
         },
         {
-            id: 2,
+            id: 'm2',
             title: 'Problem',
             item: 'Physical interface control might not be usable for people with (situational) impairments.'
         },
         {
-            id: 3,
+            id: 'm3',
             title: 'Solution',
             item: 'Construct voice user interface (VOI) to provide speech-input control for personal computers.'
         }

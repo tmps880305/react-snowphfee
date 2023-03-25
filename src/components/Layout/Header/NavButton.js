@@ -51,6 +51,8 @@ const NavButton = () => {
         // }
     ];
 
+    const resumeLink = 'https://drive.google.com/file/d/1WGzdJTH2XVJ2jpC0J0nBBxejS8alp6Md/view?usp=share_link';
+
     return (
         <div className={classes.navbar}>
             <ul className={classes['nav-ul']}>
@@ -66,7 +68,7 @@ const NavButton = () => {
                     </div>
                 </li>
                 <li>
-                    <NavLink to='resume'>Resume</NavLink>
+                    <NavLink to={resumeLink} target="_blank" rel="noopener noreferrer">Resume</NavLink>
                 </li>
                 <li>
                     <NavLink to='about'>About</NavLink>
