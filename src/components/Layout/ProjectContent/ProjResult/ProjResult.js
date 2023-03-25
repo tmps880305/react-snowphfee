@@ -2,7 +2,7 @@ import React from 'react';
 
 import classes from './ProjResult.module.css';
 import ProjectSeparator from "../../ProjectSeparator/ProjectSeparator";
-import demoCatch from "../../../../assets/img/projects/catchcursor/catch_demo_1.gif";
+import demoCatch from "../../../../assets/img/projects/catchcursor/catch_demo.gif";
 
 const ProjResult = (props) => {
     return (
