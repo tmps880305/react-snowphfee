@@ -7,7 +7,7 @@ const ProjIntroduction = (props) => {
     return (
         <>
             <div className={classes['intro-container']}>
-                <ProjectSeparator title={props.title}/>
+                <ProjectSeparator title={props.introduction.title}/>
                 <div className={classes['intro-wrap']}>
                     <div className={classes.intro}>
                         CatchCursor is a voice user interface developed by us to provide more accessible user interface
