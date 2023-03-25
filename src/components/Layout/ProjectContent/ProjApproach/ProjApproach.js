@@ -1,18 +1,19 @@
 import React from 'react';
 
+import cntClasses from '../ProjContent.module.css';
 import classes from './ProjApproach.module.css';
 import ProjectSeparator from "../../ProjectSeparator/ProjectSeparator";
 
 const ProjApproach = (props) => {
     return (
-        <>
-            <div className={classes['appr-container']}>
-                <ProjectSeparator title={props.approach.title}/>
-                <div className={classes['appr-wrap']}>
+        <div className={cntClasses.cntContainer}>
+            <ProjectSeparator title={props.approach.title}/>
+            <div className={cntClasses.cntWrap}>
+                <div className={classes['appr-cnt']}>
                     <h3>To be updated!</h3>
                 </div>
             </div>
-        </>
+        </div>
     )
 };
 
