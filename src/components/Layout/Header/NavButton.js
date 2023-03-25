@@ -5,27 +5,50 @@ import classes from "./NavButton.module.css";
 
 const NavButton = () => {
 
+    // const DUMMY_DROP_LISTS = [
+    //     {
+    //         id: 1,
+    //         item: 'Front-end',
+    //         link: 'skills'
+    //     },
+    //     {
+    //         id: 2,
+    //         item: 'UX design',
+    //         link: 'skills'
+    //     },
+    //     {
+    //         id: 3,
+    //         item: 'Prototyping',
+    //         link: 'skills'
+    //     },
+    //     {
+    //         id: 4,
+    //         item: 'Accessibility',
+    //         link: 'skills'
+    //     }
+    // ];
+
     const DUMMY_DROP_LISTS = [
         {
             id: 1,
-            item: 'Front-end',
-            link: 'skills'
+            item: 'Catch Cursor',
+            link: 'skills/catchcursor'
         },
         {
             id: 2,
-            item: 'UX design',
+            item: 'Pixel Paper',
             link: 'skills'
         },
         {
             id: 3,
-            item: 'Prototyping',
+            item: 'React - Portfolio',
             link: 'skills'
         },
-        {
-            id: 4,
-            item: 'Accessibility',
-            link: 'skills'
-        }
+        // {
+        //     id: 4,
+        //     item: 'Accessibility',
+        //     link: 'skills'
+        // }
     ];
 
     return (
