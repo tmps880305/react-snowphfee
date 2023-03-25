@@ -1,5 +1,7 @@
 .card {
     /*width: fit-content;*/
+    display: flex;
+    flex-direction: column;
 }
 
 .card h2 {
@@ -9,4 +11,22 @@
 .card p {
     font-weight: lighter;
     letter-spacing: 0.08rem;
+}
+
+/* Responsive for screen size under 900px and 600px */
+@media only screen and (max-width: 900px) {
+
+}
+
+@media only screen and (max-width: 600px) {
+    .card {
+        flex-direction: row;
+        align-items: center;
+        column-gap: 8px;
+    }
+    .card p {
+        font-weight: normal;
+        font-size: 1rem;
+    }
+
 }

@@ -10,3 +10,15 @@
     display: flex;
     justify-content: space-between;
 }
+
+/* Responsive for screen size under 900px and 600px */
+@media only screen and (max-width: 900px) {
+
+}
+
+@media only screen and (max-width: 600px) {
+    .cardWraps {
+        flex-direction: column;
+        justify-content: center;
+    }
+}

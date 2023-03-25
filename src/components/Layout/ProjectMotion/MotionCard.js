@@ -6,7 +6,7 @@ const ProjectInfo = (props) => {
     return (
         <div className={classes.card}>
             <p>{props.title}</p>
-            <div>{props.item}</div>
+            <div className={classes.text}>{props.item}</div>
         </div>
     )
 };

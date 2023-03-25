@@ -12,7 +12,7 @@ const ProjResult = (props) => {
                 <div className={classes['rstl-wrap']}>
                     <h3>Demonstration</h3>
                     <div className={classes.intro}>
-                        In the following GiF, I demonstrated how to control the cursor with my voice input:
+                        In the following GIF, I demonstrated how to control the cursor with my voice input:
                         <ol>
                             <li>
                                 When I said 'CatchCursor', the large grid showed up for me as a reference to make

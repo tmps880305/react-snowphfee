@@ -2,11 +2,11 @@
     width: 100%;
 }
 
-.card div {
+.card .text {
     color: #000000;
     font-family: 'Noto Sans JP', sans-serif;
     font-size: clamp(1rem, 1.6vw, 1.75rem);
-    text-decoration: none;
+    /*text-decoration: none;*/
     font-weight: bold;
 }
 
@@ -14,3 +14,24 @@
 /*    font-weight: lighter;*/
 /*    letter-spacing: 0.08rem;*/
 /*}*/
+
+/* Responsive for screen size under 900px and 600px */
+@media only screen and (max-width: 900px) {
+
+}
+
+@media only screen and (max-width: 600px) {
+    .card {
+        margin-bottom: 1rem;
+    }
+
+    .card p{
+        font-size: 1rem;
+        text-align: center;
+        line-height: 0.5;
+    }
+
+    .card .text {
+        text-align: center;
+    }
+}

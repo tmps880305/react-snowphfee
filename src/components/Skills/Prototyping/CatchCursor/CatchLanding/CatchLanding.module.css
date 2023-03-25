@@ -43,14 +43,28 @@
     font-size: clamp(1rem, 1.6vw, 1.75rem);
 }
 
-/* Initial background image shape and set aspect ratio */
-@media only screen and (max-width: 1120px){
+/* Responsive for screen size under 900px and 600px */
+@media only screen and (max-width: 900px) {
+    /* Cancel clipping of main image */
     .mainImage {
-        margin-bottom: 80px;
         clip-path: none;
     }
+}
 
-    .slg {
-        margin-top: 15%;
+@media only screen and (max-width: 600px) {
+    /* width 100% to make texts aligned center */
+    .ttlContainer {
+        width: 100%;
+        margin-top: 5%;
+        align-items: center;
+    }
+
+    /* Titles align center */
+    .mainTitle {
+        text-align: center;
+    }
+
+    .subTitle {
+        text-align: center;
     }
 }
