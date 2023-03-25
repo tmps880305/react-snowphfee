@@ -1,6 +1,7 @@
 import React from 'react';
 
 import classes from './MainSkillList.module.css';
+import {Link} from "react-router-dom";
 
 
 const MainSkillList = (props) => {
@@ -10,12 +11,14 @@ const MainSkillList = (props) => {
                 <h3>{props.title}</h3>
             </div>
             <div className={classes['sList-item']}>
-                {props.items.map(item=>{
-                    return <div className={classes.itemText} key={item.id}>{item.title}</div>
+                {props.items.map(item => {
+                    return <div className={classes.itemText} key={item.id}><Link to={item.link}>{item.title}</Link>
+                    </div>
                 })}
             </div>
         </div>
     )
-};
+}
+    ;
 
-export default MainSkillList
+    export default MainSkillList

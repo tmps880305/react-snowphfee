@@ -27,16 +27,40 @@ const DUMMY_SKILL_LISTS = [
     }
 ];
 
+const DUMMY_PROJECTS = [
+    {
+        id: 1,
+        title: '01',
+        items: [{id: '1-1', title: 'Catch Cursor', link:'skills/catchcursor'}]
+    },
+    {
+        id: 2,
+        title: '02',
+        items: [{id: '2-1', title: 'Pixel Paper', link:'skills/catchcursor'}]
+    },
+    {
+        id: 3,
+        title: '03',
+        items: [{id: '3-1', title: 'React Portfolio', link:'skills/catchcursor'}]
+    },
+    // {
+    //     id: 4,
+    //     title: '04',
+    //     items: [{id: '4-1', title: 'Accessibility'}]
+    // }
+];
+
 const MainSkill = (props) => {
 
     return (
         <div className={classes['skill-container']}>
             <div className={classes['skill-wrapper']}>
                 <div className={classes.slogan}>
-                    <h2>Skills</h2>
+                    {/*<h2>Skills</h2>*/}
+                    <h2>Projects</h2>
                 </div>
                 <div className={classes['skill-li-container']}>
-                    {DUMMY_SKILL_LISTS.map(item => {
+                    {DUMMY_PROJECTS.map(item => {
                         return <MainSkillList
                             key={item.id}
                             title={item.title}

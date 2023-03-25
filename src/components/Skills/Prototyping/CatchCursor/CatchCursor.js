@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useLayoutEffect} from 'react';
 
 import classes from './CatchCursor.module.css'
 import CatchLanding from "./CatchLanding/CatchLanding";
@@ -166,6 +166,11 @@ const DUMMY_CATCHCURSOR_INFO = {
 
 
 const CatchCursor = () => {
+
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0)
+    });
+
     return (
         <div className={classes}>
             <CatchLanding landing={DUMMY_CATCHCURSOR_INFO.landing}/>

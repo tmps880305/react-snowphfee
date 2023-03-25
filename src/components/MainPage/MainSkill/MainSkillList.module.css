@@ -34,11 +34,15 @@
 .sList-item .itemText {
     margin: 0;
     padding: 0;
+}
+
+.itemText a {
     color: #FFFDFD;
     font-family: 'Abhaya Libre', serif;
     text-decoration: none;
     font-size: clamp(1.125rem, 2vw, 2.25rem);
 }
+
 
 @media only screen and (max-width: 900px) {
     .sList-card {
