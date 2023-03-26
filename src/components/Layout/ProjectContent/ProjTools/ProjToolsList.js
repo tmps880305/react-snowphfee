@@ -21,7 +21,6 @@ const ProjToolsList = (props) => {
                                 key={index}
                                 listNum={index}
                                 tool={tool}
-                                idPref={props.tools.idPref}   //idPref is the prefix of id before the number. Ex. 'tool' in 'tool1'
                             />
                         )
                     })}

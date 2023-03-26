@@ -10,7 +10,7 @@ const DUMMY_PROJECT = [
     {id: 'p3',name:'pixelpaper',project: <PixelPaper key="pixelpaper"/>}
 ];
 
-const ProjectDetails = (props) => {
+const ProjectDetails = () => {
     const params = useParams();
 
     const showProject = DUMMY_PROJECT.map(project => {
@@ -18,7 +18,7 @@ const ProjectDetails = (props) => {
             return project.project;
         }
         else {
-            return
+            return null
         }
     })
 

@@ -24,39 +24,32 @@ const DUMMY_CATCHCURSOR_INFO = {
     },
     motionInfo: [
         {
-            id: 'mi1',
             title: 'Focus',
             item: 'UX research / Usability testing'
         },
         {
-            id: 'mi2',
             title: 'Time',
             item: 'Course Project - 13 weeks'
         },
         {
-            id: 'mi3',
             title: 'Role',
             item: 'UX research'
         },
         {
-            id: 'mi4',
             title: 'Tools',
             item: 'Figma'
         }
     ],
     motion: [
         {
-            id: 'm1',
             title: 'Prompt',
             item: 'Evaluate usability and user experience for our customer – Pixel Paper.'
         },
         {
-            id: 'm2',
             title: 'Problem',
             item: 'Pixel Paper could become more usable by speaking the user language and increasing its consistency.'
         },
         {
-            id: 'm3',
             title: 'Solution',
             item: 'Prorvide suggestions after Heuristic Evaluation and usability tests.'
         }
@@ -68,10 +61,8 @@ const DUMMY_CATCHCURSOR_INFO = {
     },
     toolInfo: {
         title: 'Tools',
-        idPref: 'pixel-tool-',
         tools: [
             {
-                id: 'pixel-tool-1',
                 name: 'Figma',
                 intro: 'Figma was used to create prototypes of changes.',
                 img: {src: require('../../../../assets/img/icon/tools/figma.png'), alt: 'figma-img'}
@@ -79,24 +70,23 @@ const DUMMY_CATCHCURSOR_INFO = {
         ]
     },
     approach: {title: 'Approach'},
-    projResults: {title: 'Results'},
+    projResults: {
+        title: 'Results', subTitle: 'Demonstration', content: {
+            title: 'In the following GIF, I demonstrated how to control the cursor with my voice input:',
+            items: [
+                'aaa', 'bbb', 'ccc'
+            ]
+        },
+        img: {src: require('../../../../assets/img/projects/pixelpaper/pixel_image.jpg'), alt: 'img-gif'}
+    },
     summary: {
         title: 'Summary',
         summary: {
             title: 'Pixel Paper is an education system prototype which provides online learning resources, including functions like: Library, Dashboard, Bookshelf, Locker, Messages, and Help.',
             list: [
-                {
-                    id: 's1',
-                    sentence: 'The system is embedded on Raspberry Pi with Python codes, which is portable and light-weighted.'
-                },
-                {
-                    id: 's2',
-                    sentence: 'The speech recognition module is built with a no-code service that is more accessible for non-experts.'
-                },
-                {
-                    id: 's3',
-                    sentence: 'The grid system is simple and accessible for wide range of users.'
-                }
+                'The system is embedded on Raspberry Pi with Python codes, which is portable and light-weighted.',
+                'The speech recognition module is built with a no-code service that is more accessible for non-experts.',
+                'The grid system is simple and accessible for wide range of users.'
             ]
         }
     },
@@ -104,45 +94,24 @@ const DUMMY_CATCHCURSOR_INFO = {
         title: 'Future Works',
         futureworks: [
             {
-                id: 'f1',
                 title: 'More accurate destination: Current grid system is still too rough to reach all destinations on the screen.',
                 items: [
-                    {
-                        id: '-1',
-                        sentence: 'Precision adjustments could be add to make precise movements with absolute distance.'
-                    },
-                    {
-                        id: '-2',
-                        sentence: 'Automatic navigation within the selected area might be a solution in further future. Imagine saying \'Logo\', and the cursor find the logo itself and move.'
-                    }
+                    'Precision adjustments could be add to make precise movements with absolute distance.',
+                    'Automatic navigation within the selected area might be a solution in further future. Imagine saying \'Logo\', and the cursor find the logo itself and move.'
                 ]
             },
             {
-                id: 'f2',
                 title: 'More accurate speech recognition:',
                 items: [
-                    {
-                        id: '-1',
-                        sentence: 'Using better speech recognition module.'
-                    },
-                    {
-                        id: '-2',
-                        sentence: 'Customize the module for users with their own speech data.'
-                    }
+                    'Using better speech recognition module.',
+                    'Customize the module for users with their own speech data.'
                 ]
             },
             {
-                id: 'f3',
                 title: 'User experience evaluations and tests:',
                 items: [
-                    {
-                        id: '-1',
-                        sentence: 'The system still need to be evaluated with UX design guidelines and principles.'
-                    },
-                    {
-                        id: '-2',
-                        sentence: 'Usability tests would be required to obtain user feedbacks.'
-                    }
+                    'The system still need to be evaluated with UX design guidelines and principles.',
+                    'Usability tests would be required to obtain user feedbacks.'
                 ]
             }
         ]
