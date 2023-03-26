@@ -14,8 +14,8 @@ const ProjSummary = (props) => {
                     <div className={classes.intro}>
                         {props.summary.summary.title}
                         <ul>
-                            {props.summary.summary.list.map(li => {
-                                return (<li key={li.id}>{li.sentence}</li>)
+                            {props.summary.summary.list.map((li,index) => {
+                                return (<li key={index}>{li}</li>)
                             })}
                         </ul>
                     </div>

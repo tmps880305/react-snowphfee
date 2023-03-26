@@ -3,7 +3,6 @@ import React from 'react';
 import cntClasses from '../ProjContent.module.css';
 import classes from './ProjResult.module.css';
 import ProjectSeparator from "../../ProjectSeparator/ProjectSeparator";
-import demoCatch from "../../../../assets/img/projects/catchcursor/catch_demo.gif";
 
 const ProjResult = (props) => {
     return (
@@ -12,28 +11,19 @@ const ProjResult = (props) => {
                 <ProjectSeparator title={props.projResults.title}/>
                 <div className={cntClasses.cntWrap}>
                     <div className={classes['rstl-cnt']}>
-                        <h3>Demonstration</h3>
+                        <h3>{props.projResults.subTitle}</h3>
                         <div className={classes.intro}>
-                            In the following GIF, I demonstrated how to control the cursor with my voice input:
+                            {props.projResults.content.title}
                             <ol>
-                                <li>
-                                    When I said 'CatchCursor', the large grid showed up for me as a reference to make
-                                    first-step selection.
-                                </li>
-                                <li>
-                                    Next, as I said 'five', I selected the large grid with #5, and the small grids
-                                    showed
-                                    up
-                                    inside the selected area.
-                                </li>
-                                <li>
-                                    Finally, as I siad 'two', I selected the small grid with #2, and the cursor moved to
-                                    the
-                                    center of box #2 then clicked.
-                                </li>
+                                {props.projResults.content.items.map((item, index) => {
+                                        return (
+                                            <li key={index}>{item}</li>
+                                        )
+                                    }
+                                )}
                             </ol>
                         </div>
-                        <img src={demoCatch} alt='catch-demo'/>
+                        <img src={props.projResults.img.src} alt={props.projResults.img.alt}/>
                     </div>
                 </div>
             </div>

@@ -7,9 +7,9 @@ const ProjectMotion = (props) => {
     return (
         <div className={classes.container}>
             <div className={classes.cardWraps}>
-                {props.motion.map(motion =>
+                {props.motion.map((motion,index) =>
                     <InfoCard
-                        key={motion.id}
+                        key={index}
                         title={motion.title}
                         item={motion.item}
                     />

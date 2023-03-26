@@ -18,42 +18,23 @@ const DUMMY_CATCHCURSOR_INFO = {
         subTitle: 'voice user interface makes you speak to your mouse',
         img: {src: require('../../../../assets/img/projects/catchcursor/catch_main.png'), alt: 'catch-main'}
     },
-    introduction: {title: 'Introduction'},
+    introduction: {
+        title: 'Introduction',
+        intro: 'CatchCursor is a voice user interface developed by us to provide more accessible user interface for people with physical impairments and people under hand-busy situational impairments. Using speech inputs, users can control the cursor on their computer.'
+    },
     motionInfo: [
-        {
-            id: 'mi1',
-            title: 'Focus',
-            item: 'Accessibility / UX design / Usability testing'
-        },
-        {
-            id: 'mi2',
-            title: 'Time',
-            item: 'Course Project - 11 weeks'
-        },
-        {
-            id: 'mi3',
-            title: 'Role',
-            item: 'UI develop / UX research / Program develop'
-        },
-        {
-            id: 'mi4',
-            title: 'Tools',
-            item: 'Python / Raspberry Pi / Edge Impulse / HTML'
-        }
+        {title: 'Focus', item: 'Accessibility / UX design / Usability testing'},
+        {title: 'Time', item: 'Course Project - 11 weeks'},
+        {title: 'Role', item: 'UI develop / UX research / Program develop'},
+        {title: 'Tools', item: 'Python / Raspberry Pi / Edge Impulse / HTML'}
     ],
     motion: [
+        {title: 'Prompt', item: 'Interface control could become hand-free to be more accessible for people'},
         {
-            id: 'm1',
-            title: 'Prompt',
-            item: 'Interface control could become hand-free to be more accessible for people'
-        },
-        {
-            id: 'm2',
             title: 'Problem',
             item: 'Physical interface control might not be usable for people with (situational) impairments.'
         },
         {
-            id: 'm3',
             title: 'Solution',
             item: 'Construct voice user interface (VOI) to provide speech-input control for personal computers.'
         }
@@ -65,53 +46,49 @@ const DUMMY_CATCHCURSOR_INFO = {
     },
     toolInfo: {
         title: 'Tools',
-        idPref: 'catch-tool-',
         tools: [
             {
-                id: 'catch-tool-1',
                 name: 'Python',
                 intro: 'The main language to run Edge Impulse client and cursor control module (PyAutoGUI).',
                 img: {src: require('../../../../assets/img/icon/tools/python.png'), alt: 'py-img'}
             },
             {
-                id: 'catch-tool-2',
                 name: 'Raspberry Pi',
                 intro: 'The Linux-based server, used to receive input from the microphone, send to the speech recognition system, and control the cursor.',
                 img: {src: require('../../../../assets/img/icon/tools/raspberry.png'), alt: 'rasp-img'}
             },
             {
-                id: 'catch-tool-3',
                 name: 'Edge Impulse',
                 intro: 'The no-code machine learning system used to build the customized speech recognition system.',
                 img: {src: require('../../../../assets/img/icon/tools/edgeimpuls.png'), alt: 'edge-img'}
             },
             {
-                id: 'catch-tool-4',
                 name: 'HTML',
-                intro: 'Building web page for CatchCursor demonstration.',
+                intro: 'Building web page for PixelPaper demonstration.',
                 img: {src: require('../../../../assets/img/icon/tools/html.png'), alt: 'html-img'}
             }
         ]
     },
     approach: {title: 'Approach'},
-    projResults: {title: 'Results'},
+    projResults: {
+        title: 'Results', subTitle: 'Demonstration', content: {
+            title: 'In the following GIF, I demonstrated how to control the cursor with my voice input:',
+            items: [
+                'When I said \'CatchCursor\', the large grid showed up for me as a reference to make first-step selection.',
+                'Next, as I said \'five\', I selected the large grid with #5, and the small grids showed up inside the selected area.',
+                'Finally, as I siad \'two\', I selected the small grid with #2, and the cursor moved to the center of box #2 then clicked.'
+            ]
+        },
+        img: {src: require('../../../../assets/img/projects/catchcursor/catch_demo.gif'), alt: 'demo-gif'}
+    },
     summary: {
         title: 'Summary',
         summary: {
-            title: 'CatchCursor is a Voice User Interface that allows people to control the cursor on the PC.',
+            title: 'PixelPaper is a Voice User Interface that allows people to control the cursor on the PC.',
             list: [
-                {
-                    id: 's1',
-                    sentence: 'The system is embedded on Raspberry Pi with Python codes, which is portable and light-weighted.'
-                },
-                {
-                    id: 's2',
-                    sentence: 'The speech recognition module is built with a no-code service that is more accessible for non-experts.'
-                },
-                {
-                    id: 's3',
-                    sentence: 'The grid system is simple and accessible for wide range of users.'
-                }
+                'The system is embedded on Raspberry Pi with Python codes, which is portable and light-weighted.',
+                'The speech recognition module is built with a no-code service that is more accessible for non-experts.',
+                'The grid system is simple and accessible for wide range of users.'
             ]
         }
     },
@@ -119,45 +96,24 @@ const DUMMY_CATCHCURSOR_INFO = {
         title: 'Future Works',
         futureworks: [
             {
-                id: 'f1',
                 title: 'More accurate destination: Current grid system is still too rough to reach all destinations on the screen.',
                 items: [
-                    {
-                        id: '-1',
-                        sentence: 'Precision adjustments could be add to make precise movements with absolute distance.'
-                    },
-                    {
-                        id: '-2',
-                        sentence: 'Automatic navigation within the selected area might be a solution in further future. Imagine saying \'Logo\', and the cursor find the logo itself and move.'
-                    }
+                    'Precision adjustments could be add to make precise movements with absolute distance.',
+                    'Automatic navigation within the selected area might be a solution in further future. Imagine saying \'Logo\', and the cursor find the logo itself and move.'
                 ]
             },
             {
-                id: 'f2',
                 title: 'More accurate speech recognition:',
                 items: [
-                    {
-                        id: '-1',
-                        sentence: 'Using better speech recognition module.'
-                    },
-                    {
-                        id: '-2',
-                        sentence: 'Customize the module for users with their own speech data.'
-                    }
+                    'Using better speech recognition module.',
+                    'Customize the module for users with their own speech data.'
                 ]
             },
             {
-                id: 'f3',
                 title: 'User experience evaluations and tests:',
                 items: [
-                    {
-                        id: '-1',
-                        sentence: 'The system still need to be evaluated with UX design guidelines and principles.'
-                    },
-                    {
-                        id: '-2',
-                        sentence: 'Usability tests would be required to obtain user feedbacks.'
-                    }
+                    'The system still need to be evaluated with UX design guidelines and principles.',
+                    'Usability tests would be required to obtain user feedbacks.'
                 ]
             }
         ]

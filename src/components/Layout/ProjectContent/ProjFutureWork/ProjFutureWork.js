@@ -12,16 +12,12 @@ const ProjFutureWork = (props) => {
                 <div className={classes['ftwrk-cnt']}>
                     <div className={classes.intro}>
                         In the future, research and improvements could be focused on:
-                        {props.futureWork.futureworks.map(work => {
+                        {props.futureWork.futureworks.map((work, index) => {
                             return (
-                                <ul key={work.id}>
+                                <ul key={index}>
                                     <li>
                                         {work.title}
-                                        <ol>
-                                            {work.items.map(item =>
-                                                <li key={item.id}>{item.sentence}</li>
-                                            )}
-                                        </ol>
+                                        <ol>{work.items.map((item, index) => <li key={index}>{item}</li>)}</ol>
                                     </li>
                                 </ul>
                             )

@@ -7,9 +7,9 @@ const ProjectInfo = (props) => {
     return (
         <div className={classes.container}>
             <div className={classes.cardWraps}>
-                {props.info.map(info =>
+                {props.info.map((info,index) =>
                     <InfoCard
-                        key={info.id}
+                        key={index}
                         title={info.title}
                         item={info.item}
                     />

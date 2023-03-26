@@ -37,7 +37,7 @@ const NavButton = () => {
         {
             id: 2,
             item: 'Pixel Paper',
-            link: 'skills'
+            link: 'skills/pixelpaper'
         },
         {
             id: 3,

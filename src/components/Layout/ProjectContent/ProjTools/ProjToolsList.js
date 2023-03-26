@@ -15,10 +15,11 @@ const ProjToolsList = (props) => {
             <ProjectSeparator title={props.tools.title}/>
             <div className={cntClasses.cntWrap}>
                 <div className={classes['tool-wrap']}>
-                    {props.tools.tools.map(tool => {
+                    {props.tools.tools.map((tool,index) => {
                         return (
                             <ProjTools
-                                key={tool.id}
+                                key={index}
+                                listNum={index}
                                 tool={tool}
                                 idPref={props.tools.idPref}   //idPref is the prefix of id before the number. Ex. 'tool' in 'tool1'
                             />
