@@ -13,3 +13,15 @@
     flex-direction: column;
     align-items: center;
 }
+
+@media only screen and (max-width: 900px) {
+    .cntWrap {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .cntWrap {
+        width: 90%;
+    }
+}

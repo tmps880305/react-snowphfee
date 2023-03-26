@@ -6,3 +6,12 @@
     row-gap: 4vw;
     justify-content: space-around;
 }
+
+@media only screen and (max-width: 600px) {
+    .tool-wrap {
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: initial;
+        align-items: center;
+    }
+}

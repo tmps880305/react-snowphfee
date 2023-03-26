@@ -42,3 +42,9 @@
     font-size: clamp(1rem, 1.6vw, 1.75rem);
     text-align: center;
 }
+
+@media only screen and (max-width: 600px) {
+    .tool-card {
+        width: 100%;
+    }
+}

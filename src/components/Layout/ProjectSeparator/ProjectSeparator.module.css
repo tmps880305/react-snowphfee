@@ -12,9 +12,35 @@
     margin: 1vw 0;
 }
 
+.sep-wrap p {
+    font-size: clamp(0.8rem, 0.8vw, 1rem);
+}
+
 .line {
-    height: 0.1vw;
-    width: 5vw;
+    height: clamp(1px,0.1vw,2px);
+    width: 4.5vw;
+}
+
+@media only screen and (max-width: 1200px) {
+    .line {
+        width: 4vw;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .sep-wrap {
+        width: 25%;
+        margin: 20px 0;
+    }
+
+    .sep-wrap p {
+        margin: 0 2vw;
+    }
+
+    .line {
+        width: 70%;
+        height: 1px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -24,7 +50,6 @@
     }
 
     .sep-wrap p {
-        font-size: 0.8rem;
         margin: 0 8px;
     }
 
