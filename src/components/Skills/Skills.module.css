@@ -1,0 +1,37 @@
+.skill-wrap{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill-card {
+    width: 100%;
+    margin: 10px 0 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill-card .imgWrap{
+    width: 40%;
+}
+
+.skill-card img {
+    width: 80%;
+    aspect-ratio: 16/9;
+}
+
+.skill-card .text {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.skill-card .subTitle {
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    font-family: 'Abhaya Libre', serif;
+    font-size: clamp(1rem, 1.6vw, 1.75rem);
+}

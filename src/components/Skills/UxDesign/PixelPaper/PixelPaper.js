@@ -71,48 +71,33 @@ const DUMMY_CATCHCURSOR_INFO = {
     },
     approach: {title: 'Approach'},
     projResults: {
-        title: 'Results', subTitle: 'Demonstration', content: {
-            title: 'In the following GIF, I demonstrated how to control the cursor with my voice input:',
-            items: [
-                'aaa', 'bbb', 'ccc'
-            ]
+        title: 'Results', subTitle: '', content: {
+            title: '',
+            items: []
         },
         img: {src: require('../../../../assets/img/projects/pixelpaper/pixel_image.jpg'), alt: 'img-gif'}
     },
     summary: {
         title: 'Summary',
         summary: {
-            title: 'Pixel Paper is an education system prototype which provides online learning resources, including functions like: Library, Dashboard, Bookshelf, Locker, Messages, and Help.',
-            list: [
-                'The system is embedded on Raspberry Pi with Python codes, which is portable and light-weighted.',
-                'The speech recognition module is built with a no-code service that is more accessible for non-experts.',
-                'The grid system is simple and accessible for wide range of users.'
-            ]
+            title: '',
+            list: []
         }
     },
     futureWork: {
         title: 'Future Works',
         futureworks: [
             {
-                title: 'More accurate destination: Current grid system is still too rough to reach all destinations on the screen.',
-                items: [
-                    'Precision adjustments could be add to make precise movements with absolute distance.',
-                    'Automatic navigation within the selected area might be a solution in further future. Imagine saying \'Logo\', and the cursor find the logo itself and move.'
-                ]
+                title: '',
+                items: []
             },
             {
-                title: 'More accurate speech recognition:',
-                items: [
-                    'Using better speech recognition module.',
-                    'Customize the module for users with their own speech data.'
-                ]
+                title: '',
+                items: []
             },
             {
-                title: 'User experience evaluations and tests:',
-                items: [
-                    'The system still need to be evaluated with UX design guidelines and principles.',
-                    'Usability tests would be required to obtain user feedbacks.'
-                ]
+                title: '',
+                items: []
             }
         ]
     },

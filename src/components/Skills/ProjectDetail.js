@@ -1,7 +1,7 @@
 import React from 'react';
 import {useParams} from "react-router-dom";
 import CatchCursor from "./Prototyping/CatchCursor/CatchCursor";
-import ZoomRedesign from "./UxDesign/ZoomRedesign";
+import ZoomRedesign from "./UxDesign/ZoomRedesign/ZoomRedesign";
 import PixelPaper from "./UxDesign/PixelPaper/PixelPaper";
 
 const DUMMY_PROJECT = [
