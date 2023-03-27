@@ -44,21 +44,21 @@ const DUMMY_PROJECTS = [
         img: {src: require('../../assets/img/projects/catchcursor/catch_main.png'), alt: 'catch-main'},
         title: 'Catch Cursor',
         subTitle: 'voice user interface makes you speak to your mouse',
-        link:'catchcursor'
+        link: 'catchcursor'
     },
     {
         type: 'UX Design',
         img: {src: require('../../assets/img/projects/zoom/zoom_main.jpg'), alt: 'zoom-main'},
         title: 'Zoom Redesign',
         subTitle: 'Improve Zoom for online course conditions',
-        link:'zoom'
+        link: 'zoom'
     },
     {
         type: 'UX Research',
         img: {src: require('../../assets/img/projects/pixelpaper/pixel_main.png'), alt: 'pixel-main'},
         title: 'Pixel Paper',
         subTitle: 'Usability evaluation for a course system prototype',
-        link:'pixelpaper'
+        link: 'pixelpaper'
     }
 ];
 
@@ -67,26 +67,23 @@ const Skills = () => {
         return (
             <div className={cntClasses.cntContainer}>
                 <div className={classes['skill-wrap']}>
-                    <div className={cntClasses.cntWrap}>
-                        <h2>Projects</h2>
-
-                        {DUMMY_PROJECTS.map(project => {
-                            return (
-                                <>
-                                    <ProjectSeparator title={project.type}/>
-                                    <Link to={project.link} className={classes['skill-card']}>
-                                        <div className={classes.imgWrap}>
-                                            <img src={project.img.src} alt={project.img.alt}/>
-                                        </div>
-                                        <div className={classes.text}>
-                                            <h3>{project.title}</h3>
-                                            <div className={classes.subTitle}>{project.subTitle}</div>
-                                        </div>
-                                    </Link>
-                                </>
-                            )
-                        })}
-                    </div>
+                    <h2>Projects</h2>
+                    {DUMMY_PROJECTS.map((project, index) => {
+                        return (
+                            <div key={index} className={cntClasses.cntWrap}>
+                                <ProjectSeparator title={project.type}/>
+                                <Link to={project.link} className={classes['skill-card']}>
+                                    <div className={classes.imgWrap}>
+                                        <img src={project.img.src} alt={project.img.alt}/>
+                                    </div>
+                                    <div className={classes.text}>
+                                        <h3>{project.title}</h3>
+                                        <div className={classes.subTitle}>{project.subTitle}</div>
+                                    </div>
+                                </Link>
+                            </div>
+                        )
+                    })}
 
                     {/*{DUMMY_TYPELIST.map(typelist => (*/}
                     {/*    <div key={typelist.id}>*/}

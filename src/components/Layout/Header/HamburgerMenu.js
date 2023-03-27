@@ -10,6 +10,11 @@ function HamburgerMenu() {
         setMenuOpen(!menuOpen);
     }
 
+    const navButClickedHandler = () => {
+        // close the menu after link clicked
+        setMenuOpen(false);
+    };
+
     return (
         <div>
             <nav className={`${classes['hamburger-nav']} ${menuOpen ? classes.open : ''}`}>
@@ -21,7 +26,7 @@ function HamburgerMenu() {
                     </div>
                 </div>
                 <div className={`${classes.menu}`}>
-                    <NavButton/>
+                    <NavButton  onNavButClicked={navButClickedHandler}/>
                 </div>
             </nav>
         </div>

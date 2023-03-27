@@ -124,7 +124,7 @@ const DUMMY_CATCHCURSOR_INFO = {
 const CatchCursor = () => {
 
     useLayoutEffect(() => {
-        window.scrollTo(0, 0)
+        window.scrollTo(0, 0);
     });
 
     return (

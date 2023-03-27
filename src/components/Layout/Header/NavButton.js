@@ -3,7 +3,7 @@ import {NavLink} from "react-router-dom";
 
 import classes from "./NavButton.module.css";
 
-const NavButton = () => {
+const NavButton = (props) => {
 
     // const DUMMY_DROP_LISTS = [
     //     {
@@ -33,16 +33,22 @@ const NavButton = () => {
 
     const resumeLink = 'https://drive.google.com/file/d/1WGzdJTH2XVJ2jpC0J0nBBxejS8alp6Md/view?usp=share_link';
 
+
+    const butClickHandler = () => {
+        props.onNavButClicked();
+    }
+
     return (
         <div className={classes.navbar}>
             <ul className={classes['nav-ul']}>
                 <li className={classes.dropdown}>
                     <div className={classes.dropWrap}>
-                        <NavLink to="skills">Skills</NavLink>
+                        <NavLink to="skills" onClick={butClickHandler}>Projects</NavLink>
                         <ul className={classes['dropdown-content']}>
-                            {DUMMY_DROP_LISTS.map((item,index) => {
-                                return <li key={index}><NavLink to={item.link}
-                                                            className={classes.dropItem}>{item.item}</NavLink></li>
+                            {DUMMY_DROP_LISTS.map((item, index) => {
+                                return <li key={index}>
+                                    <NavLink to={item.link} className={classes.dropItem}>{item.item}</NavLink>
+                                </li>
                             })}
                         </ul>
                     </div>
@@ -51,7 +57,7 @@ const NavButton = () => {
                     <NavLink to={resumeLink} target="_blank" rel="noopener noreferrer">Resume</NavLink>
                 </li>
                 <li>
-                    <NavLink to='about'>About</NavLink>
+                    <NavLink to='about' onClick={butClickHandler}>About</NavLink>
                 </li>
             </ul>
         </div>
