@@ -13,7 +13,7 @@ const Header = () => {
     const [isMobile, setIsMobile] = useState(false);
 
     useEffect(() => {
-        width >= 600 ? setIsMobile(false) : setIsMobile(true);
+        width >= 900 ? setIsMobile(false) : setIsMobile(true);
     }, [width]);
 
     return (
@@ -24,8 +24,6 @@ const Header = () => {
                     <Link to="mailto:jeniwang09@gmail.com">jeniwang09@gmail.com</Link>
                 </div>
                 {isMobile ? <HamburgerMenu/> : <NavButton/>}
-
-
             </nav>
         </header>
     )
