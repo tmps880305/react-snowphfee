@@ -9,7 +9,7 @@ import HamburgerMenu from "./HamburgerMenu";
 
 
 const Header = () => {
-    const {height, width} = useWindowDimensions();
+    const width = useWindowDimensions().width;
     const [isMobile, setIsMobile] = useState(false);
 
     useEffect(() => {
