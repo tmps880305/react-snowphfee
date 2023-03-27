@@ -9,9 +9,10 @@ import HamburgerMenu from "./HamburgerMenu";
 
 
 const Header = () => {
-    const width = useWindowDimensions().width;
-    const [isMobile, setIsMobile] = useState(false);
+    const width = useWindowDimensions().width;  // obtain screen view width from custom hook
+    const [isMobile, setIsMobile] = useState(false);    // current screen status
 
+    // Listening the width of screen and set as mobile mode when width<600
     useEffect(() => {
         width >= 900 ? setIsMobile(false) : setIsMobile(true);
     }, [width]);
