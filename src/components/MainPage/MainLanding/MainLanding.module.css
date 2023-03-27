@@ -8,6 +8,7 @@
     width: 100vw;
     aspect-ratio: 16/9;
     clip-path: polygon(0 0, 100vw 0, 100vw 36vw, 50vw 45vw, 0 36vw);
+    z-index: -1;
 }
 
 .slg {
