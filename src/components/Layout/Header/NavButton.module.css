@@ -83,4 +83,25 @@
     transition-duration: 500ms;
 }
 
+@media only screen and (max-width: 900px) {
+    .navbar {
+        width: 100%;
+    }
+
+    .nav-ul {
+        flex-direction: column;
+    }
+
+    .nav-ul li {
+        padding: 20px;
+    }
+
+    .dropdown-content {
+        display: none;
+    }
+
+    .navbar a {
+        font-size: 1.7rem;
+    }
+}
 

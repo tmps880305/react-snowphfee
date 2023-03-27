@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 
 import classes from './HamburgerMenu.module.css'
+import NavButton from "./NavButton";
 
 function HamburgerMenu() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -11,18 +12,16 @@ function HamburgerMenu() {
 
     return (
         <div>
-            <nav className={classes['hamburger-nav']}>
-                <div className={classes['hamburger-menu']} onClick={handleMenuClick}>
-                    <div className={`${classes.line} ${classes['line-1']} ${menuOpen ? classes.open : ""}`}></div>
-                    <div className={`${classes.line} ${classes['line-2']} ${menuOpen ? classes.open : ""}`}></div>
-                    <div className={`${classes.line} ${classes['line-3']} ${menuOpen ? classes.open : ""}`}></div>
+            <nav className={`${classes['hamburger-nav']} ${menuOpen ? classes.open : ''}`}>
+                <div className={classes['hamburger-wrap']} onClick={handleMenuClick}>
+                    <div className={classes['hamburger-menu']}>
+                        <div className={`${classes.line} ${classes['line-1']}`}></div>
+                        <div className={`${classes.line} ${classes['line-2']}`}></div>
+                        <div className={`${classes.line} ${classes['line-3']}`}></div>
+                    </div>
                 </div>
-                <div className={`${menuOpen ? classes.open : classes.menu}`}>
-                    <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/about">About</a></li>
-                        <li><a href="/contact">Contact</a></li>
-                    </ul>
+                <div className={`${classes.menu}`}>
+                    <NavButton/>
                 </div>
             </nav>
         </div>
