@@ -4,7 +4,6 @@ import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import './App.css';
 import MainPage from "./components/MainPage/MainPage";
 import RootLayout from "./components/Layout/RootLayout";
-import CatchCursor from "./components/Skills/Prototyping/CatchCursor/CatchCursor";
 import Skills from "./components/Skills/Skills";
 import Resume from "./components/Resume";
 import AboutMe from "./components/AboutMe";

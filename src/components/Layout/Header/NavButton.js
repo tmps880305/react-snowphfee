@@ -27,7 +27,7 @@ const NavButton = (props) => {
     const DUMMY_DROP_LISTS = [
         {item: 'Catch Cursor', link: 'skills/catchcursor'},
         {item: 'Pixel Paper', link: 'skills/pixelpaper'},
-        {item: 'React - Portfolio', link: 'skills'},
+        {item: 'React - Portfolio', link: 'skills/portfolio'},
     ];
 
 

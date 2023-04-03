@@ -1,7 +1,7 @@
 import React, {useLayoutEffect} from 'react';
 
 import classes from './PixelPaper.module.css'
-import PixelLanding from "./PixelLanding/PixelLanding";
+import PixelLanding from "./PixelLanding";
 import ProjectInfo from "../../../Layout/ProjectInfo/ProjectInfo";
 import ProjectMotion from "../../../Layout/ProjectMotion/ProjectMotion";
 import ProjIntroduction from "../../../Layout/ProjectContent/ProjIntroduction/ProjIntroduction";

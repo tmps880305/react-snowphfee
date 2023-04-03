@@ -1,7 +1,7 @@
 import React, {useLayoutEffect} from 'react';
 
 import classes from './CatchCursor.module.css'
-import CatchLanding from "./CatchLanding/CatchLanding";
+import CatchLanding from "./CatchLanding";
 import ProjectInfo from "../../../Layout/ProjectInfo/ProjectInfo";
 import ProjectMotion from "../../../Layout/ProjectMotion/ProjectMotion";
 import ProjIntroduction from "../../../Layout/ProjectContent/ProjIntroduction/ProjIntroduction";
@@ -94,6 +94,7 @@ const DUMMY_CATCHCURSOR_INFO = {
     },
     futureWork: {
         title: 'Future Works',
+        subTitle: 'In the future, research and improvements could be focused on:',
         futureworks: [
             {
                 title: 'More accurate destination: Current grid system is still too rough to reach all destinations on the screen.',

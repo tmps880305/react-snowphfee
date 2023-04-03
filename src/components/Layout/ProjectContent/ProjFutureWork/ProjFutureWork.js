@@ -11,7 +11,7 @@ const ProjFutureWork = (props) => {
             <div className={cntClasses.cntWrap}>
                 <div className={classes['ftwrk-cnt']}>
                     <div className={classes.intro}>
-                        In the future, research and improvements could be focused on:
+                        {props.futureWork.subTitle}
                         {props.futureWork.futureworks.map((work, index) => {
                             return (
                                 <ul key={index}>
