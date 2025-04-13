@@ -12,6 +12,7 @@ import ProjSummary from "../../../Layout/ProjectContent/ProjSummary/ProjSummary"
 import ProjTools from "../../../Layout/ProjectContent/ProjTools/ProjToolsList";
 import ProjFutureWork from "../../../Layout/ProjectContent/ProjFutureWork/ProjFutureWork";
 import {getProjectData} from "../../../../data/ProjectDataFactory";
+import GenericProjectPage from "../../GenericProjectPage";
 
 const PixelPaper = () => {
     const data = getProjectData('pixelpaper');
@@ -21,18 +22,23 @@ const PixelPaper = () => {
     });
 
     return (
-        <div className={classes}>
-            <PixelLanding landing={data.landing}/>
-            <ProjectInfo info={data.motionInfo}/>
-            <ProjectMotion motion={data.motion}/>
-            <ProjIntroduction introduction={data.introduction}/>
-            <ProjProcess timeline={data.timeline}/>
-            <ProjTools tools={data.toolInfo}/>
-            <ProjApproach approach={data.approach}/>
-            <ProjResult projResults={data.projResults}/>
-            <ProjSummary summary={data.summary}/>
-            <ProjFutureWork futureWork={data.futureWork}/>
-        </div>
+        // <div className={classes}>
+        //     <PixelLanding landing={data.landing}/>
+        //     <ProjectInfo info={data.motionInfo}/>
+        //     <ProjectMotion motion={data.motion}/>
+        //     <ProjIntroduction introduction={data.introduction}/>
+        //     <ProjProcess timeline={data.timeline}/>
+        //     <ProjTools tools={data.toolInfo}/>
+        //     <ProjApproach approach={data.approach}/>
+        //     <ProjResult projResults={data.projResults}/>
+        //     <ProjSummary summary={data.summary}/>
+        //     <ProjFutureWork futureWork={data.futureWork}/>
+        // </div>
+        <GenericProjectPage
+            data={data}
+            classes={classes}
+            LandingComponent={PixelLanding}
+        />
     )
 };
 

@@ -12,6 +12,7 @@ import ProjResult from "../../../Layout/ProjectContent/ProjResult/ProjResult";
 import ProjSummary from "../../../Layout/ProjectContent/ProjSummary/ProjSummary";
 import ProjTools from "../../../Layout/ProjectContent/ProjTools/ProjToolsList";
 import ProjFutureWork from "../../../Layout/ProjectContent/ProjFutureWork/ProjFutureWork";
+import GenericProjectPage from "../../GenericProjectPage";
 
 const CatchCursor = () => {
     const demoRef = useRef(null);
@@ -26,18 +27,25 @@ const CatchCursor = () => {
     });
 
     return (
-        <div className={classes}>
-            <CatchLanding landing={data.landing}/>
-            <ProjectInfo info={data.motionInfo}/>
-            <ProjectMotion motion={data.motion}/>
-            <ProjIntroduction introduction={data.introduction} onWatchDemo={handleWatchDemo}/>
-            <ProjProcess timeline={data.timeline}/>
-            <ProjTools tools={data.toolInfo}/>
-            <ProjApproach approach={data.approach}/>
-            <ProjResult projResults={data.projResults} demoRef={demoRef}/>
-            <ProjSummary summary={data.summary}/>
-            <ProjFutureWork futureWork={data.futureWork}/>
-        </div>
+        // <div className={classes}>
+        //     <CatchLanding landing={data.landing}/>
+        //     <ProjectInfo info={data.motionInfo}/>
+        //     <ProjectMotion motion={data.motion}/>
+        //     <ProjIntroduction introduction={data.introduction} onWatchDemo={handleWatchDemo}/>
+        //     <ProjProcess timeline={data.timeline}/>
+        //     <ProjTools tools={data.toolInfo}/>
+        //     <ProjApproach approach={data.approach}/>
+        //     <ProjResult projResults={data.projResults} demoRef={demoRef}/>
+        //     <ProjSummary summary={data.summary}/>
+        //     <ProjFutureWork futureWork={data.futureWork}/>
+        // </div>
+        <GenericProjectPage
+            data={data}
+            classes={classes}
+            LandingComponent={CatchLanding}
+            onWatchDemo={handleWatchDemo}
+            demoRef={demoRef}
+        />
     )
 };
 

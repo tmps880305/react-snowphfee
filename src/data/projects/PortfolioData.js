@@ -61,24 +61,6 @@ class PortfolioData {
                 ]
             },
             approach: {title: 'What\'s special'},
-            projResults: {
-                title: 'Results', subTitle: 'To be updated!', content: {
-                    title: '',
-                    items: []
-                },
-                img: {src: require('../../assets/img/projects/portfolio/portfolio_main.png'), alt: 'demo-gif'}
-            },
-            summary: {
-                title: 'Summary',
-                summary: {
-                    title: '',
-                    list: []
-                }
-            },
-            futureWork: {
-                title: 'Future work',
-                futureworks: []
-            },
         };
 
         PortfolioData._instance = this;
