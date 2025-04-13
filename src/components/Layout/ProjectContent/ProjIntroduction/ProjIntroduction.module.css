@@ -5,3 +5,12 @@
     text-align: center;
     line-height: 2;
 }
+
+.watchDemoBtn {
+    color: #0070f3;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: clamp(0.8rem, 1.28vw, 1.4rem);
+    text-align: center;
+    line-height: 2;
+    cursor: pointer;
+}

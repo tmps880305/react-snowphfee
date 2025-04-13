@@ -9,8 +9,14 @@ const ProjIntroduction = (props) => {
         <div className={cntClasses.cntContainer}>
             <ProjectSeparator title={props.introduction.title}/>
             <div className={cntClasses.cntWrap}>
-                <div className={classes.intro}>{props.introduction.intro}</div>
+                <div className={classes.intro}>
+                    {props.introduction.intro}
+                </div>
+                {props.onWatchDemo && <a onClick={props.onWatchDemo} className={classes.watchDemoBtn}>
+                    ↓ Watch Demo ↓
+                </a>}
             </div>
+
         </div>
     )
 };

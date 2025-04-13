@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {forwardRef} from 'react';
 
 import cntClasses from '../ProjContent.module.css';
 import classes from './ProjResult.module.css';
@@ -10,7 +10,7 @@ const ProjResult = (props) => {
             <div className={cntClasses.cntContainer}>
                 <ProjectSeparator title={props.projResults.title}/>
                 <div className={cntClasses.cntWrap}>
-                    <div className={classes['rstl-cnt']}>
+                    <div className={classes['rstl-cnt']} ref={props.demoRef ?? null}>
                         <h3>{props.projResults.subTitle}</h3>
                         <div className={classes.intro}>
                             {props.projResults.content.title}

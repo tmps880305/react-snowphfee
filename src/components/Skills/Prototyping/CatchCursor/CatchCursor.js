@@ -1,4 +1,4 @@
-import React, {useLayoutEffect} from 'react';
+import React, {useLayoutEffect, useRef} from 'react';
 
 import classes from './CatchCursor.module.css'
 import CatchLanding from "./CatchLanding";
@@ -132,6 +132,11 @@ const DUMMY_CATCHCURSOR_INFO = {
 
 
 const CatchCursor = () => {
+    const demoRef = useRef(null);
+
+    const handleWatchDemo = () => {
+        demoRef.current?.scrollIntoView({ behavior: "smooth" });
+    };
 
     useLayoutEffect(() => {
         window.scrollTo(0, 0);
@@ -142,11 +147,11 @@ const CatchCursor = () => {
             <CatchLanding landing={DUMMY_CATCHCURSOR_INFO.landing}/>
             <ProjectInfo info={DUMMY_CATCHCURSOR_INFO.motionInfo}/>
             <ProjectMotion motion={DUMMY_CATCHCURSOR_INFO.motion}/>
-            <ProjIntroduction introduction={DUMMY_CATCHCURSOR_INFO.introduction}/>
+            <ProjIntroduction introduction={DUMMY_CATCHCURSOR_INFO.introduction} onWatchDemo={handleWatchDemo}/>
             <ProjProcess timeline={DUMMY_CATCHCURSOR_INFO.timeline}/>
             <ProjTools tools={DUMMY_CATCHCURSOR_INFO.toolInfo}/>
             <ProjApproach approach={DUMMY_CATCHCURSOR_INFO.approach}/>
-            <ProjResult projResults={DUMMY_CATCHCURSOR_INFO.projResults}/>
+            <ProjResult projResults={DUMMY_CATCHCURSOR_INFO.projResults} demoRef={demoRef}/>
             <ProjSummary summary={DUMMY_CATCHCURSOR_INFO.summary}/>
             <ProjFutureWork futureWork={DUMMY_CATCHCURSOR_INFO.futureWork}/>
         </div>
