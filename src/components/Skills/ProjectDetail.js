@@ -1,33 +1,53 @@
-import React from 'react';
-import {useParams} from "react-router-dom";
-import CatchCursor from "./Prototyping/CatchCursor/CatchCursor";
-import ZoomRedesign from "./UxDesign/ZoomRedesign/ZoomRedesign";
-import PixelPaper from "./UxDesign/PixelPaper/PixelPaper";
-import Portfolio from "./FrontEnd/Portfolio/Portfolio";
+import React, {useRef} from 'react';
+import {Navigate, useParams} from "react-router-dom";
+import CatchLanding from "./Prototyping/CatchCursor/CatchLanding";
+import classesCatch from "./Prototyping/CatchCursor/CatchCursor.module.css";
+import PixelLanding from "./UxDesign/PixelPaper/PixelLanding";
+import classesPixel from "./UxDesign/PixelPaper/PixelPaper.module.css";
+import PortLanding from "./FrontEnd/Portfolio/PortLanding";
+import classesPortfolio from "./FrontEnd/Portfolio/Portfolio.module.css";
 
-const DUMMY_PROJECT = [
-    {id: 'p1',name:'catchcursor', project: <CatchCursor key="catchcursor"/>},
-    {id: 'p2',name:'zoom', project: <ZoomRedesign key="zoom"/>},
-    {id: 'p3',name:'pixelpaper',project: <PixelPaper key="pixelpaper"/>},
-    {id: 'p4',name:'portfolio',project: <Portfolio key="portfolio"/>}
-];
+import {getProjectData} from "../../data/ProjectDataFactory";
+import GenericProjectPage from "./GenericProjectPage";
+
+const landingComponents = {
+    catchcursor: CatchLanding,
+    pixelpaper: PixelLanding,
+    portfolio: PortLanding
+};
+
+const projectClasses = {
+    catchcursor: classesCatch,
+    pixelpaper: classesPixel,
+    portfolio: classesPortfolio
+};
 
 const ProjectDetails = () => {
-    const params = useParams();
+    const {projectId} = useParams();
+    const data = getProjectData(projectId);
+    const demoRef = useRef(null);
 
-    const showProject = DUMMY_PROJECT.map(project => {
-        if (params.project === project.name) {
-            return project.project;
-        }
-        else {
-            return null
-        }
-    })
+    const isValidProject = projectId in landingComponents;
+
+    if (!isValidProject) {
+        return <Navigate to="/not-found" replace/>; // OR return <div>Project not found</div>
+    }
+
+    const LandingComponent = landingComponents[projectId];
+    const classes = projectClasses[projectId];
+
+    const handleWatchDemo = () => {
+        demoRef.current?.scrollIntoView({behavior: "smooth"});
+    };
 
     return (
-        <>
-            {showProject}
-        </>
+        <GenericProjectPage
+            data={data}
+            classes={classes}
+            LandingComponent={LandingComponent}
+            onWatchDemo={handleWatchDemo}
+            demoRef={demoRef}
+        />
     )
 };
 

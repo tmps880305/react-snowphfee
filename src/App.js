@@ -1,5 +1,5 @@
 import React from "react";
-import {createBrowserRouter, RouterProvider} from "react-router-dom";
+import {createBrowserRouter, Navigate, RouterProvider} from "react-router-dom";
 import {initGA} from './components/utl/analytics';
 
 import './App.css';
@@ -19,10 +19,10 @@ const router = createBrowserRouter([
         children: [
             {index: true, element: <MainPage/>},
             {path: 'skills', element: <Skills/>},
-            {path: 'skills/:project', element: <ProjectDetail/>},
+            {path: 'skills/:projectId', element: <ProjectDetail/>},
             {path: 'about', element: <AboutMe/>},
         ]
-    },
+    }
 ]);
 
 function App() {

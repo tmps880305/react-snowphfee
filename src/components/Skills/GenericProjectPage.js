@@ -26,7 +26,7 @@ const GenericProjectPage = ({data, LandingComponent, classes, onWatchDemo, demoR
             {data.timeline && <ProjProcess timeline={data.timeline}/>}
             {data.toolInfo && <ProjToolsList tools={data.toolInfo}/>}
             {data.approach && <ProjApproach approach={data.approach}/>}
-            {data.result && <ProjResult projResults={data.projResults} demoRef={demoRef}/>}
+            {data.projResults && <ProjResult projResults={data.projResults} demoRef={demoRef}/>}
             {data.summary && <ProjSummary summary={data.summary}/>}
             {data.futureWork && <ProjFutureWork futureWork={data.futureWork}/>}
         </div>
