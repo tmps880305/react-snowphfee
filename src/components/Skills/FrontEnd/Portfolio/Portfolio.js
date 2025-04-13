@@ -15,18 +15,18 @@ import ProjFutureWork from "../../../Layout/ProjectContent/ProjFutureWork/ProjFu
 const DUMMY_PORTFOLIO_INFO = {
     landing: {
         title: 'Portfolio',
-        subTitle: 'a React.js project using modern hook functions',
+        subTitle: 'a React project using modern hook functions',
         img: {src: require('../../../../assets/img/projects/portfolio/portfolio_main.png'), alt: 'catch-main'}
     },
     introduction: {
         title: 'Introduction',
-        intro: 'I designed my portfolio using Figma and constructed it with React.js, wireframing and prototyping in Figma to guide the development process. Although the current version features static data, a dynamic data structure was prepared to facilitate future integration with a database.'
+        intro: 'I designed my portfolio using Figma and constructed it with React, wireframing and prototyping in Figma to guide the development process. Although the current version features static data, a dynamic data structure was prepared to facilitate future integration with a database.'
     },
     motionInfo: [
         {title: 'Focus', item: 'Front-end develop / UX design'},
         {title: 'Time', item: '10 weeks in total'},
-        {title: 'Role', item: 'Web design / Web develop'},
-        {title: 'Tools', item: 'React.js / Figma / ChatGPT'}
+        {title: 'Role', item: 'Web designer / Web developer'},
+        {title: 'Tools', item: 'React / Figma / ChatGPT'}
     ],
     motion: [
         {
@@ -39,7 +39,7 @@ const DUMMY_PORTFOLIO_INFO = {
         },
         {
             title: 'Solution',
-            item: 'Create my portfolio and display my works, using the popular front-end framework - React.js.'
+            item: 'Create my portfolio and display my works, using the popular front-end framework - React.'
         }
     ],
     timeline: {
@@ -56,8 +56,8 @@ const DUMMY_PORTFOLIO_INFO = {
                 img: {src: require('../../../../assets/img/icon/tools/figma.png'), alt: 'figma-img'}
             },
             {
-                name: 'React.js',
-                intro: 'React.js was used to build the website by using hooks and css styling.',
+                name: 'React',
+                intro: 'React was used to build the website by using hooks and css styling.',
                 img: {src: require('../../../../assets/img/icon/tools/react.png'), alt: 'rasp-img'}
             },
             {

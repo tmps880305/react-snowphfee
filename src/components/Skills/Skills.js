@@ -47,18 +47,18 @@ const DUMMY_PROJECTS = [
         link: 'catchcursor'
     },
     {
-        type: 'UX Design',
-        img: {src: require('../../assets/img/projects/zoom/zoom_main.jpg'), alt: 'zoom-main'},
-        title: 'Zoom Redesign',
-        subTitle: 'Improve Zoom for online course conditions',
-        link: 'zoom'
-    },
-    {
         type: 'UX Research',
         img: {src: require('../../assets/img/projects/pixelpaper/pixel_main.png'), alt: 'pixel-main'},
         title: 'Pixel Paper',
         subTitle: 'Usability evaluation for a course system prototype',
         link: 'pixelpaper'
+    },
+    {
+        type: 'Programming',
+        img: {src: require('../../assets/img/projects/portfolio/portfolio_main.png'), alt: 'zoom-main'},
+        title: 'Portfolio Website',
+        subTitle: 'React project using modern hook functions',
+        link: 'portfolio'
     }
 ];
 
