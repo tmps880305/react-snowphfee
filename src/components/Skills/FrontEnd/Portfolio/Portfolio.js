@@ -23,7 +23,7 @@ const DUMMY_PORTFOLIO_INFO = {
         intro: 'I designed my portfolio using Figma and constructed it with React, wireframing and prototyping in Figma to guide the development process. Although the current version features static data, a dynamic data structure was prepared to facilitate future integration with a database.'
     },
     motionInfo: [
-        {title: 'Focus', item: 'Front-end develop / UX design'},
+        {title: 'Focus', item: 'UX design / Front-end develop'},
         {title: 'Time', item: '10 weeks in total'},
         {title: 'Role', item: 'Web designer / Web developer'},
         {title: 'Tools', item: 'React / Figma / ChatGPT'}
