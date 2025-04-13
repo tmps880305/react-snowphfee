@@ -1,5 +1,6 @@
 import React from "react";
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
+import {initGA} from './components/utl/analytics';
 
 import './App.css';
 import MainPage from "./components/MainPage/MainPage";
@@ -8,6 +9,7 @@ import Skills from "./components/Skills/Skills";
 import Resume from "./components/Resume";
 import AboutMe from "./components/AboutMe";
 import ProjectDetail from "./components/Skills/ProjectDetail";
+import TrackPage from './components/utl/TrackPage';
 
 const router = createBrowserRouter([
     {
@@ -18,14 +20,23 @@ const router = createBrowserRouter([
             {index: true, element: <MainPage/>},
             {path: 'skills', element: <Skills/>},
             {path: 'skills/:project', element: <ProjectDetail/>},
-            {path: 'resume', element: <Resume/>},
             {path: 'about', element: <AboutMe/>},
         ]
     },
 ]);
 
 function App() {
-    return <RouterProvider router={router}/>;
+    React.useEffect(() => {
+        initGA();
+    }, []);
+
+    return (
+        <RouterProvider router={router}>
+            <TrackPage/>
+        </RouterProvider>
+    );
+
+    // return <RouterProvider router={router}/>;
 }
 
 export default App;

@@ -31,7 +31,7 @@ const NavButton = (props) => {
     ];
 
 
-    const resumeLink = 'https://drive.google.com/file/d/1WGzdJTH2XVJ2jpC0J0nBBxejS8alp6Md/view?usp=share_link';
+    const resumeLink = 'https://snowphfee.com/resume.pdf';
 
 
     const butClickHandler = () => {

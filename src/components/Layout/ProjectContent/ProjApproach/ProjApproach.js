@@ -10,7 +10,9 @@ const ProjApproach = (props) => {
             <ProjectSeparator title={props.approach.title}/>
             <div className={cntClasses.cntWrap}>
                 <div className={classes['appr-cnt']}>
-                    <h3>To be updated!</h3>
+                    <div className={classes.intro}>
+                        {props.approach.text}
+                    </div>
                 </div>
             </div>
         </div>

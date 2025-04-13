@@ -29,14 +29,17 @@ const DUMMY_CATCHCURSOR_INFO = {
         {title: 'Tools', item: 'Python / Raspberry Pi / Edge Impulse / HTML'}
     ],
     motion: [
-        {title: 'Prompt', item: 'Interface control could become hand-free to be more accessible for people'},
+        {
+            title: 'Prompt',
+            item: 'Interface control can be made hands-free to improve accessibility for a broader range of users.'
+        },
         {
             title: 'Problem',
-            item: 'Physical interface control might not be usable for people with (situational) impairments.'
+            item: 'Physical controls may not be usable for individuals with permanent or situational impairments.'
         },
         {
             title: 'Solution',
-            item: 'Construct voice user interface (VOI) to provide speech-input control for personal computers.'
+            item: 'Build a voice user interface (VUI) that enables speech-based control of personal computers.'
         }
     ],
     timeline: {
@@ -69,7 +72,13 @@ const DUMMY_CATCHCURSOR_INFO = {
             }
         ]
     },
-    approach: {title: 'Approach'},
+    approach: {
+        title: 'Approach',
+        text: 'In this project, I designed and implemented a simple voice-based interface that allows users to control the mouse cursor using only speech. ' +
+            'The system leverages the Web Speech API to recognize verbal commands like “move” and “catch,” triggering real-time feedback through cursor motion and animations.\n' +
+            '\n' +
+            'The interaction was intentionally kept playful but grounded in an accessibility context — to explore how voice interaction can support hands-free computing, especially for users with temporary or permanent impairments.'
+    },
     projResults: {
         title: 'Results', subTitle: 'Demonstration', content: {
             title: 'In the following GIF, I demonstrated how to control the cursor with my voice input:',
